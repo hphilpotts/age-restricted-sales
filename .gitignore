@@ -1,4 +1,22 @@
+# DuckDB database file -- derived/reproducible from data/raw/ + sql/, not source
+*.duckdb
+*.duckdb.wal
+
+# Python
 __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Tableau
+*.hyper
+*.tableau-tmp/
+*.twbx.lock
+
+# OS/editor cruft
+.DS_Store
+.ipynb_checkpoints/
+
+# csv files generated locally
+data/raw/
+data/modeled/

@@ -12,8 +12,16 @@ All figures are fictitious. No real employer data is used or referenced.
 import numpy as np
 import pandas as pd
 from datetime import date, timedelta
+from pathlib import Path
 
 rng = np.random.default_rng(42)
+
+# Always write into <repo_root>/data/raw/, regardless of the current working
+# directory the script happens to be run from (so `python3 generate_data.py`
+# from inside scripts/, or `python3 scripts/generate_data.py` from the repo
+# root, both land in the same place).
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
 # 1. SHOP DIMENSIONS
@@ -80,8 +88,8 @@ tier[excellent_idx] = "excellent"
 tier[at_risk_idx] = "at_risk"
 shops["_compliance_tier"] = tier  # internal use only, dropped before export
 
-shops.to_csv("shop_dimensions_full.csv", index=False)  # keep tier for generation
-shops.drop(columns="_compliance_tier").to_csv("shop_dimensions.csv", index=False)
+shops.to_csv(OUTPUT_DIR / "shop_dimensions_full.csv", index=False)  # keep tier for generation (not committed -- see .gitignore)
+shops.drop(columns="_compliance_tier").to_csv(OUTPUT_DIR / "shop_dimensions.csv", index=False)
 
 CATEGORIES = ["alcohol", "tobacco", "energy drinks", "analgesics", "fireworks", "lottery"]
 
@@ -270,7 +278,7 @@ print("Overall id_check_complete rate:", transactions["id_check_complete"].mean(
 checked = transactions[transactions["id_check_complete"] == True]
 print("Overall id_check_passed rate (of checked):", (checked["id_check_passed"] == True).mean().round(3))
 
-transactions.to_csv("transactions.csv", index=False)
+transactions.to_csv(OUTPUT_DIR / "transactions.csv", index=False)
 
 # ---------------------------------------------------------------------------
 # 4. TEST PURCHASES FACT TABLE
@@ -350,4 +358,4 @@ print("Shops at 100%:", (by_shop == 1.0).sum())
 print("Shops 85-95%:", ((by_shop >= 0.85) & (by_shop <= 0.95)).sum())
 print("Shops below 80%:", (by_shop < 0.80).sum())
 
-test_purchases.to_csv("test_purchases.csv", index=False)
+test_purchases.to_csv(OUTPUT_DIR / "test_purchases.csv", index=False)

@@ -1,0 +1,6 @@
+duckdb==1.5.4
+duckdb-cli==1.5.4
+numpy==2.5.1
+pandas==3.0.3
+python-dateutil==2.9.0.post0
+six==1.17.0
