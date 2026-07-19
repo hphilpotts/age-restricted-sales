@@ -18,16 +18,13 @@ SELECT
     transaction_id,
     store_number::VARCHAR AS store_number,
     transaction_date::DATE AS transaction_date,
-    transaction_time AS transaction_time,
-    (transaction_date || ' ' || transaction_time)::TIMESTAMP AS transaction_datetime,
+    transaction_time::TIME AS transaction_time,
+    (transaction_date::DATE + transaction_time::TIME) AS transaction_datetime,
     user_id,
     category,
     id_check_complete::BOOLEAN AS id_check_complete,
-    CASE
-        WHEN id_check_passed IS NULL OR id_check_passed = '' THEN NULL
-        ELSE id_check_passed::BOOLEAN
-    END AS id_check_passed
-FROM read_csv('data/raw/transactions.csv', header = true, all_varchar = true);
+    id_check_passed::BOOLEAN AS id_check_passed -- nullstr param handles empty strings
+FROM read_csv('data/raw/transactions.csv', header = true, all_varchar = true, nullstr = ['']);
 
 
 CREATE OR REPLACE TABLE test_purchases AS
@@ -49,5 +46,9 @@ UNION ALL
 SELECT 'transactions', COUNT(*) FROM transactions
 UNION ALL
 SELECT '  -> ARS rows', COUNT(*) FROM transactions WHERE id_check_complete
+UNION ALL
+SELECT '  -> orpahed stores', COUNT(*) 
+FROM transactions t 
+WHERE NOT EXISTS (SELECT 1 FROM shop_dimensions s WHERE s.store_number = t.store_number)
 UNION ALL
 SELECT 'test_purchases', COUNT(*) FROM test_purchases;
