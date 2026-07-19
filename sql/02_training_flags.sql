@@ -52,24 +52,38 @@ CROSS JOIN bounds b
 CROSS JOIN config c;
 
 
--- Signal 2: pass-rate concern (of checks completed, <80% pass -> possible
--- mislogging rather than genuine refusals -- see project background notes)
+-- Signal 2: pass-rate outlier (low or very high pass rates)
+-- uses hardcoded thresholds only (no estate impact)
+-- users with < 10 transactions are not scored
+
 CREATE OR REPLACE VIEW user_pass_rate_flags AS
+-- hardcoded values set below:
+WITH config AS (
+    SELECT 0.8 AS low_pass_rate, 0.95 AS high_pass_rate, 10 AS min_tx
+),
+raw_stats AS (
+    SELECT
+        t.store_number,
+        t.user_id,
+        COUNT(*) FILTER (WHERE t.id_check_complete) AS checks_completed,
+        AVG(t.id_check_passed::INTEGER) FILTER (WHERE t.id_check_complete) AS check_pass_rate
+    FROM transactions t
+    GROUP BY t.store_number, t.user_id
+    HAVING COUNT(*) FILTER (WHERE t.id_check_complete) > 0
+)
 SELECT
-    store_number,
-    user_id,
-    COUNT(*) FILTER (WHERE id_check_complete) AS checks_completed,
-    AVG(CASE WHEN id_check_passed THEN 1.0 ELSE 0.0 END)
-        FILTER (WHERE id_check_complete) AS check_pass_rate,
+    s.*,
+    c.low_pass_rate,
+    c.high_pass_rate,
     CASE
-        WHEN AVG(CASE WHEN id_check_passed THEN 1.0 ELSE 0.0 END)
-             FILTER (WHERE id_check_complete) < 0.80
-        THEN 'Low pass rate - possible mislogging'
-        ELSE NULL
+        WHEN s.checks_completed <= c.min_tx THEN 'Unscored, low volume'
+        WHEN s.check_pass_rate < c.low_pass_rate THEN 'Low pass rate - possible mislogging'
+        WHEN s.check_pass_rate >= c.high_pass_rate THEN 'High pass rate'
+        ELSE 'Normal'
     END AS pass_rate_flag
-FROM transactions
-GROUP BY store_number, user_id
-HAVING COUNT(*) FILTER (WHERE id_check_complete) > 0;
+FROM raw_stats s
+CROSS JOIN config c;
+
 
 -- Signal 3: recent test-purchase fail (failed within the last 90 days of
 -- the dataset's most recent transaction date)
@@ -108,10 +122,11 @@ SELECT
 FROM user_check_rate_flags c
 FULL OUTER JOIN user_pass_rate_flags p USING (store_number, user_id);
 
+
 -- Sanity check counts -- see the README for expected ballpark figures
 SELECT
     COUNT(*) FILTER (WHERE check_rate_flag IN('Very low - rarely checking ID', 'Very high - checking almost everyone')) AS check_rate_flags,
-    COUNT(*) FILTER (WHERE pass_rate_flag IS NOT NULL)  AS pass_rate_flags,
+    COUNT(*) FILTER (WHERE pass_rate_flag IN('Low pass rate - possible mislogging', 'High pass rate'))  AS pass_rate_flags,
     COUNT(*) FILTER (WHERE has_recent_test_purchase_fail) AS recent_fail_flags,
     COUNT(*) AS total_users
 FROM training_flags;
