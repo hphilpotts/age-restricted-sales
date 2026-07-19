@@ -6,7 +6,7 @@
 
 set -e
 
-DB="training_radar.duckdb"
+DB="age_restricted_sales.duckdb"
 
 echo "Loading raw tables..."
 duckdb "$DB" -c ".read sql/01_create_tables.sql"
