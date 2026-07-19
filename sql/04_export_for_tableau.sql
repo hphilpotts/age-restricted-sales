@@ -19,3 +19,9 @@ COPY (SELECT * FROM training_flags)
 
 COPY (SELECT * FROM recent_test_purchase_fails)
     TO 'data/modeled/recent_test_purchase_fails.csv' (HEADER, DELIMITER ',');
+
+-- Category-level detail:
+-- Not exported for now
+-- Can uncomment to add a per-user, per-category drill-down chart later
+-- COPY (SELECT * FROM user_category_check_rate_flags)
+--     TO 'data/modeled/user_category_check_rate_flags.csv' (HEADER, DELIMITER ',');

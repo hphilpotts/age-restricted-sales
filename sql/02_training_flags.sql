@@ -54,12 +54,12 @@ CROSS JOIN config c;
 
 -- Signal 2: pass-rate outlier (low or very high pass rates)
 -- uses hardcoded thresholds only (no estate impact)
--- users with < 10 transactions are not scored
+-- dynamic sample size protection added for low vs. high pass rate
 
 CREATE OR REPLACE VIEW user_pass_rate_flags AS
 -- hardcoded values set below:
 WITH config AS (
-    SELECT 0.8 AS low_pass_rate, 0.95 AS high_pass_rate, 10 AS min_tx
+    SELECT 0.8 AS low_pass_rate, 0.95 AS high_pass_rate, 5 AS min_tx, 30 AS min_tx_high_pass
 ),
 raw_stats AS (
     SELECT
@@ -76,9 +76,9 @@ SELECT
     c.low_pass_rate,
     c.high_pass_rate,
     CASE
-        WHEN s.checks_completed <= c.min_tx THEN 'Unscored, low volume'
+        WHEN s.checks_completed <= c.min_tx THEN 'Unscored - low volume'
         WHEN s.check_pass_rate < c.low_pass_rate THEN 'Low pass rate - possible mislogging'
-        WHEN s.check_pass_rate >= c.high_pass_rate THEN 'High pass rate'
+        WHEN s.check_pass_rate >= c.high_pass_rate AND s.checks_completed >= c.min_tx_high_pass THEN 'High pass rate'
         ELSE 'Normal'
     END AS pass_rate_flag
 FROM raw_stats s
@@ -106,7 +106,45 @@ WHERE tp.test_purchase_pass = FALSE
   AND tp.test_purchase_date >= r.today - INTERVAL 90 DAY; -- time window set here
 
 
--- Consolidated view: one row per user, all three signals side by side.
+-- Signal 4: category-level check-rate 
+
+CREATE OR REPLACE VIEW user_category_check_rate_stats AS
+SELECT
+    t.store_number,
+    t.user_id,
+    t.category,
+    COUNT(*) AS category_transactions,
+    AVG(t.id_check_complete::INTEGER) AS category_check_rate,
+    s.check_complete_rate AS baseline_check_rate
+FROM transactions t
+JOIN user_check_rate_stats s USING (store_number, user_id)
+GROUP BY t.store_number, t.user_id, t.category, s.check_complete_rate;
+
+
+CREATE OR REPLACE VIEW user_category_check_rate_flags AS
+-- hardcoded values set below:
+WITH config AS (
+    SELECT 5 AS min_tx, 0.15 AS gap_threshold -- 15 percentage points vs own baseline
+)
+SELECT
+    s.store_number,
+    s.user_id,
+    s.category,
+    s.category_transactions,
+    s.category_check_rate,
+    s.baseline_check_rate,
+    ROUND(s.baseline_check_rate - s.category_check_rate, 4) AS gap_vs_baseline,
+    CASE
+        WHEN s.category_transactions < c.min_tx THEN 'Unscored - low volume'
+        WHEN (s.baseline_check_rate - s.category_check_rate) >= c.gap_threshold THEN 'Low - below own baseline'
+        WHEN (s.category_check_rate - s.baseline_check_rate) >= c.gap_threshold THEN 'High - above own baseline'
+        ELSE 'Normal'
+    END AS category_check_rate_flag
+FROM user_category_check_rate_stats s
+CROSS JOIN config c;
+
+
+-- Consolidated view: one row per user, all signals side by side.
 -- the resulting output is Tableau-ready
 CREATE OR REPLACE VIEW training_flags AS
 SELECT
@@ -115,13 +153,25 @@ SELECT
     c.total_transactions,
     ROUND(c.check_complete_rate, 4) AS check_complete_rate,
     c.check_rate_flag,
-    p.checks_completed,
+    COALESCE(p.checks_completed, 0) AS checks_completed,
     ROUND(p.check_pass_rate, 4)     AS check_pass_rate,
-    p.pass_rate_flag,
+    COALESCE(p.pass_rate_flag, 'Unscored - low volume') AS pass_rate_flag,
     EXISTS (
         SELECT 1 FROM recent_test_purchase_fails f
         WHERE f.user_id = COALESCE(c.user_id, p.user_id)
-    ) AS has_recent_test_purchase_fail
+    ) AS has_recent_test_purchase_fail,
+    -- Signal 4 rollup -- restricted to the "Low" direction
+    EXISTS (
+        SELECT 1 FROM user_category_check_rate_flags g
+        WHERE g.user_id = COALESCE(c.user_id, p.user_id)
+          AND g.category_check_rate_flag = 'Low - below own baseline'
+    ) AS has_category_check_issue,
+    (
+        SELECT string_agg(g.category, ', ')
+        FROM user_category_check_rate_flags g
+        WHERE g.user_id = COALESCE(c.user_id, p.user_id)
+          AND g.category_check_rate_flag = 'Low - below own baseline'
+    ) AS flagged_categories
 FROM user_check_rate_flags c
 FULL OUTER JOIN user_pass_rate_flags p USING (store_number, user_id);
 
@@ -131,5 +181,6 @@ SELECT
     COUNT(*) FILTER (WHERE check_rate_flag IN('Very low - rarely checking ID', 'Very high - checking almost everyone')) AS check_rate_flags,
     COUNT(*) FILTER (WHERE pass_rate_flag IN('Low pass rate - possible mislogging', 'High pass rate'))  AS pass_rate_flags,
     COUNT(*) FILTER (WHERE has_recent_test_purchase_fail) AS recent_fail_flags,
+    COUNT(*) FILTER (WHERE has_category_check_issue) AS category_check_flags,
     COUNT(*) AS total_users
 FROM training_flags;

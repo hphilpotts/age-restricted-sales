@@ -60,11 +60,10 @@ shops_raw = [
     ("030", "Cardiff",     "Wales",       "Supermarket"),
 ]
 
-CHAIN = "OmniMart"
+CHAIN = "Ashgrove"
 shops = pd.DataFrame(shops_raw, columns=["store_number", "location", "region", "format"])
 shops["shop_name"] = CHAIN + " " + shops["location"]
 shops = shops[["store_number", "shop_name", "region", "format"]]
-
 # NOTE ON LOADING: store_number is a zero-padded 3-digit string ("001"-"030") in
 # every CSV here. Default type inference (pandas, BigQuery autodetect, Excel,
 # Tableau) will read a pure-digit column as an integer and silently drop the
@@ -170,6 +169,16 @@ def sample_times(category, n):
 # 2. USER POOL (internal - drives both fact tables, not exported separately)
 # ---------------------------------------------------------------------------
 
+# Scales every user's transaction count up by this factor, keeping the same
+# min/shape (just more of it). Higher volume directly reduces sampling noise
+# on any per-user or per-user-per-category rate -- standard error shrinks by
+# 1/sqrt(multiplier), so 4x the transactions roughly halves it. This matters
+# most for Signal 4 (category-level check rate) in 02_training_flags.sql,
+# where category volumes per user were thin (fireworks: median 2/year) and
+# only ~15% of user-category pairs cleared the 5-transaction scoring minimum.
+# Set back to 1 to reproduce the original volumes.
+TRANSACTIONS_PER_USER_MULTIPLIER = 4
+
 user_records = []   # (user_id, store_number, check_complete_base, check_pass_base, n_transactions)
 uid_counter = 1
 
@@ -192,7 +201,7 @@ for _, row in shops.iterrows():
         else:
             check_pass_base = np.clip(rng.beta(27, 3), 0.75, 1.0)
 
-        n_transactions = 30 + int(rng.exponential(45))  # min 30, long tail of "a lot more"
+        n_transactions = TRANSACTIONS_PER_USER_MULTIPLIER * (30 + int(rng.exponential(45)))  # min 30, long tail of "a lot more" (scaled by the multiplier above)
 
         user_records.append((user_id, store_number, check_complete_base, check_pass_base, n_transactions))
 
