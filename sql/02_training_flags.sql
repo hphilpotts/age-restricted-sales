@@ -85,8 +85,10 @@ FROM raw_stats s
 CROSS JOIN config c;
 
 
--- Signal 3: recent test-purchase fail (failed within the last 90 days of
--- the dataset's most recent transaction date)
+-- Signal 3: recent test-purchase fail 
+-- within the last 90 days of most recent transaction date
+-- logic can be updated in WHERE clause
+
 CREATE OR REPLACE VIEW recent_test_purchase_fails AS
 WITH reference_date AS (
     SELECT MAX(transaction_date) AS today FROM transactions
@@ -97,23 +99,24 @@ SELECT
     tp.test_purchase_id,
     tp.test_purchase_date,
     tp.category,
-    r.today - tp.test_purchase_date AS days_since_fail
+    date_diff('day', tp.test_purchase_date::DATE, r.today::DATE) AS days_since_fail
 FROM test_purchases tp
 CROSS JOIN reference_date r
 WHERE tp.test_purchase_pass = FALSE
-  AND tp.test_purchase_date >= r.today - INTERVAL 90 DAY;
+  AND tp.test_purchase_date >= r.today - INTERVAL 90 DAY; -- time window set here
+
 
 -- Consolidated view: one row per user, all three signals side by side.
--- This is the table the Tableau "Training Needs" worksheet should read from.
+-- the resulting output is Tableau-ready
 CREATE OR REPLACE VIEW training_flags AS
 SELECT
     COALESCE(c.store_number, p.store_number) AS store_number,
-    COALESCE(c.user_id, p.user_id)           AS user_id,
+    COALESCE(c.user_id, p.user_id) AS user_id,
     c.total_transactions,
-    c.check_complete_rate,
+    ROUND(c.check_complete_rate, 4) AS check_complete_rate,
     c.check_rate_flag,
     p.checks_completed,
-    p.check_pass_rate,
+    ROUND(p.check_pass_rate, 4)     AS check_pass_rate,
     p.pass_rate_flag,
     EXISTS (
         SELECT 1 FROM recent_test_purchase_fails f
@@ -123,7 +126,7 @@ FROM user_check_rate_flags c
 FULL OUTER JOIN user_pass_rate_flags p USING (store_number, user_id);
 
 
--- Sanity check counts -- see the README for expected ballpark figures
+-- Sanity check counts:
 SELECT
     COUNT(*) FILTER (WHERE check_rate_flag IN('Very low - rarely checking ID', 'Very high - checking almost everyone')) AS check_rate_flags,
     COUNT(*) FILTER (WHERE pass_rate_flag IN('Low pass rate - possible mislogging', 'High pass rate'))  AS pass_rate_flags,
