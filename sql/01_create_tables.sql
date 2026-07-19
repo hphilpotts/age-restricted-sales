@@ -39,15 +39,16 @@ SELECT
     test_purchase_pass::BOOLEAN AS test_purchase_pass
 FROM read_csv('data/raw/test_purchases.csv', header = true, all_varchar = true);
 
+
 -- sanity check after loading: row counts (should match the source CSVs)
--- with a count of Age Restricted Sales (ARS) transaction rows
+-- with a count of checks completed count, orphaned stores
 SELECT 'shop_dimensions' AS table_name, COUNT(*) AS row_count FROM shop_dimensions
 UNION ALL
 SELECT 'transactions', COUNT(*) FROM transactions
 UNION ALL
-SELECT '  -> ARS rows', COUNT(*) FROM transactions WHERE id_check_complete
+SELECT '  -> check rows', COUNT(*) FROM transactions WHERE id_check_complete
 UNION ALL
-SELECT '  -> orpahed stores', COUNT(*) 
+SELECT '  -> orphaned stores', COUNT(*) 
 FROM transactions t 
 WHERE NOT EXISTS (SELECT 1 FROM shop_dimensions s WHERE s.store_number = t.store_number)
 UNION ALL

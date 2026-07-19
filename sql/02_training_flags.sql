@@ -1,27 +1,38 @@
 -- 02_training_flags.sql
--- Builds the three "potential training issue" signals from the project
--- brief, all keyed on user_id (+ store_number so they can be grouped or
--- filtered by shop in Tableau). Depends on 01_create_tables.sql having
--- already been run.
+-- creates a 'training flags' table based on user behaviour / history
+-- Depends on 01_create_tables.sql having already been run.
+
 
 -- Signal 1: check-rate outlier (very low OR very high id_check_complete rate)
--- Uses estate-wide 5th/85th percentiles rather than a hardcoded cutoff, so
--- the threshold self-adjusts if the data is regenerated.
+-- Uses estate-wide 5th/85th percentiles and hardcoded cutoffs in config
+-- users with < 10 transactions are not scored
+
 CREATE OR REPLACE VIEW user_check_rate_stats AS
 SELECT
     store_number,
     user_id,
     COUNT(*) AS total_transactions,
-    AVG(CASE WHEN id_check_complete THEN 1.0 ELSE 0.0 END) AS check_complete_rate
+    AVG(id_check_complete::INTEGER) AS check_complete_rate
 FROM transactions
 GROUP BY store_number, user_id;
 
+
 CREATE OR REPLACE VIEW user_check_rate_flags AS
-WITH bounds AS (
+-- hardcoded values set below:
+WITH config AS (
+    SELECT 
+        0.05 AS low_floor,
+        0.50 AS high_ceiling,
+        10 AS min_tx -- sample size protection
+),
+bounds AS (
     SELECT
-        quantile_cont(check_complete_rate, 0.05) AS low_cutoff,
-        quantile_cont(check_complete_rate, 0.85) AS high_cutoff
-    FROM user_check_rate_stats
+        GREATEST(quantile_cont(s.check_complete_rate, 0.05), c.low_floor) AS low_cutoff,
+        LEAST(quantile_cont(s.check_complete_rate, 0.85), c.high_ceiling) AS high_cutoff
+    FROM user_check_rate_stats s
+    CROSS JOIN config c
+    WHERE s.total_transactions >= c.min_tx
+    GROUP BY c.low_floor, c.high_ceiling
 )
 SELECT
     s.store_number,
@@ -31,12 +42,15 @@ SELECT
     b.low_cutoff,
     b.high_cutoff,
     CASE
-        WHEN s.check_complete_rate <= b.low_cutoff  THEN 'Very low - rarely checking ID'
+        WHEN s.total_transactions < c.min_tx THEN 'Unscored - low volume'
+        WHEN s.check_complete_rate <= b.low_cutoff THEN 'Very low - rarely checking ID'
         WHEN s.check_complete_rate >= b.high_cutoff THEN 'Very high - checking almost everyone'
-        ELSE NULL
+        ELSE 'Normal'
     END AS check_rate_flag
 FROM user_check_rate_stats s
-CROSS JOIN bounds b;
+CROSS JOIN bounds b
+CROSS JOIN config c;
+
 
 -- Signal 2: pass-rate concern (of checks completed, <80% pass -> possible
 -- mislogging rather than genuine refusals -- see project background notes)
@@ -96,7 +110,7 @@ FULL OUTER JOIN user_pass_rate_flags p USING (store_number, user_id);
 
 -- Sanity check counts -- see the README for expected ballpark figures
 SELECT
-    COUNT(*) FILTER (WHERE check_rate_flag IS NOT NULL) AS check_rate_flags,
+    COUNT(*) FILTER (WHERE check_rate_flag IN('Very low - rarely checking ID', 'Very high - checking almost everyone')) AS check_rate_flags,
     COUNT(*) FILTER (WHERE pass_rate_flag IS NOT NULL)  AS pass_rate_flags,
     COUNT(*) FILTER (WHERE has_recent_test_purchase_fail) AS recent_fail_flags,
     COUNT(*) AS total_users
