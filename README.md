@@ -62,3 +62,4 @@ Re-run step 2 any time the source assumptions change, replacing the .CSVs in Tab
 
 - `store_number` is a zero-padded 3-digit string throughout. Most tools' default type inference (pandas, DuckDB CSV autodetect, Tableau) will read a pure-digit column as an integer and drop the padding - the SQL scripts enforce the 0-padded 3-digit string format up to export/ingestion. Typing may need to be changed again in the Tableau data pane.  
 - Test purchases are an even audit sample across shops/categories (by design); transactions are realistically skewed (more alcohol than fireworks, weighted toward evenings/weekends/seasonal peaks).  
+- Cashiers with under 30 transactions and a pass rate over the lower threshold currently flag as `'Normal'` but are not scored against the upper pass rate threshold. A possible future addition would be to have another `'Unscored - insufficient volume for High pass rate check'` flag which captures this potential blind spot.  

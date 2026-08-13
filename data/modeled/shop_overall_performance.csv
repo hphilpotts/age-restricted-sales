@@ -1,14 +1,4 @@
 store_number,shop_name,region,format,test_purchases,pass_rate
-007,OmniMart Guildford,South East,Supermarket,30,0.8666666666666667
-009,OmniMart Brighton,South East,Supermarket,30,0.7666666666666667
-017,OmniMart Nottingham,Midlands,Supermarket,30,0.9666666666666667
-018,OmniMart Leicester,Midlands,Supermarket,30,0.8666666666666667
-023,OmniMart Chester,North West,Supermarket,30,0.8666666666666667
-027,OmniMart Edinburgh,Scotland,Superstore,30,0.9
-008,OmniMart Reading,South East,Superstore,30,0.9
-004,OmniMart Greenwich,London,Supermarket,30,0.7666666666666667
-028,OmniMart Glasgow,Scotland,Supermarket,30,0.8333333333333334
-021,OmniMart Liverpool,North West,Supermarket,30,1.0
 019,OmniMart Coventry,Midlands,Local,30,1.0
 025,OmniMart Durham,North East,Local,30,0.9
 005,OmniMart Richmond,London,Local,30,0.8333333333333334
@@ -29,3 +19,13 @@ store_number,shop_name,region,format,test_purchases,pass_rate
 001,OmniMart Camden,London,Local,30,0.9333333333333333
 030,OmniMart Cardiff,Wales,Supermarket,30,0.8333333333333334
 006,OmniMart Ealing,London,Supermarket,30,0.8666666666666667
+007,OmniMart Guildford,South East,Supermarket,30,0.8666666666666667
+009,OmniMart Brighton,South East,Supermarket,30,0.7666666666666667
+017,OmniMart Nottingham,Midlands,Supermarket,30,0.9666666666666667
+018,OmniMart Leicester,Midlands,Supermarket,30,0.8666666666666667
+023,OmniMart Chester,North West,Supermarket,30,0.8666666666666667
+027,OmniMart Edinburgh,Scotland,Superstore,30,0.9
+008,OmniMart Reading,South East,Superstore,30,0.9
+004,OmniMart Greenwich,London,Supermarket,30,0.7666666666666667
+028,OmniMart Glasgow,Scotland,Supermarket,30,0.8333333333333334
+021,OmniMart Liverpool,North West,Supermarket,30,1.0
