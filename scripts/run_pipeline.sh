@@ -6,6 +6,13 @@
 
 set -e
 
+cd "$(dirname "$0")/.."
+
+command -v duckdb >/dev/null 2>&1 || {
+    echo "Error: duckdb CLI not found. Install it with: pip install duckdb-cli" >&2
+    exit 1
+}
+
 DB="age_restricted_sales.duckdb"
 
 echo "Loading raw tables..."
@@ -20,4 +27,4 @@ duckdb "$DB" -c ".read sql/03_shop_performance_summary.sql"
 echo "Exporting modeled CSVs for Tableau..."
 duckdb "$DB" -c ".read sql/04_export_for_tableau.sql"
 
-echo "Done. Modeled CSVs are in data/modeled/ -- point Tableau at these."
+echo "Done. Modeled CSVs are in data/modeled/ - ready for export/ingestion to Tableau."

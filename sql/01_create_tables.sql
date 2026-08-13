@@ -1,8 +1,9 @@
 -- 01_create_tables.sql
 -- Loads the three raw CSVs (data/raw/) into typed DuckDB tables.
 
--- Run with:  duckdb age_restricted_sales.duckdb -c ".read sql/01_create_tables.sql"
--- (paths are relative to the repo root)
+-- Runs from ../scripts/run_pipeline.sh (executes first in sequence)
+-- Manually run with:  duckdb age_restricted_sales.duckdb -c ".read sql/01_create_tables.sql"
+-- (paths is relative to the repo root)
 
 CREATE OR REPLACE TABLE shop_dimensions AS
 SELECT

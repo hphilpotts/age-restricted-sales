@@ -1,190 +1,197 @@
 store_number,shop_name,region,format,category,day_of_week,time_of_day_band,test_purchases,pass_rate
-004,OmniMart Greenwich,London,Supermarket,tobacco,Sunday,Early evening (17-20),1,1.0
-004,OmniMart Greenwich,London,Supermarket,tobacco,Monday,Early evening (17-20),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,analgesics,Wednesday,Afternoon (12-17),2,0.5
-024,OmniMart Newcastle,North East,Supermarket,analgesics,Saturday,Morning (08-12),1,0.0
-027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Monday,Afternoon (12-17),1,1.0
-019,OmniMart Coventry,Midlands,Local,tobacco,Tuesday,Late evening (20-22),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,fireworks,Wednesday,Morning (08-12),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,lottery,Friday,Early evening (17-20),1,1.0
-009,OmniMart Brighton,South East,Supermarket,analgesics,Friday,Early evening (17-20),1,0.0
-014,OmniMart Exeter,South West,Supermarket,analgesics,Saturday,Early evening (17-20),2,1.0
-007,OmniMart Guildford,South East,Supermarket,tobacco,Saturday,Early evening (17-20),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
-019,OmniMart Coventry,Midlands,Local,alcohol,Wednesday,Morning (08-12),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,tobacco,Thursday,Afternoon (12-17),1,1.0
-003,OmniMart Islington,London,Supermarket,lottery,Thursday,Late evening (20-22),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,tobacco,Friday,Early evening (17-20),1,1.0
-002,OmniMart Clapham,London,Local,energy drinks,Saturday,Morning (08-12),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,energy drinks,Wednesday,Afternoon (12-17),1,1.0
-026,OmniMart York,North East,Supermarket,analgesics,Wednesday,Early evening (17-20),1,0.0
-008,OmniMart Reading,South East,Superstore,fireworks,Friday,Morning (08-12),1,1.0
-001,OmniMart Camden,London,Local,analgesics,Friday,Afternoon (12-17),2,1.0
-014,OmniMart Exeter,South West,Supermarket,alcohol,Friday,Early evening (17-20),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,analgesics,Saturday,Afternoon (12-17),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,lottery,Saturday,Late evening (20-22),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,fireworks,Friday,Afternoon (12-17),1,1.0
-019,OmniMart Coventry,Midlands,Local,tobacco,Saturday,Afternoon (12-17),1,1.0
-022,OmniMart Preston,North West,Local,fireworks,Wednesday,Late evening (20-22),1,1.0
-023,OmniMart Chester,North West,Supermarket,alcohol,Friday,Morning (08-12),1,1.0
-025,OmniMart Durham,North East,Local,analgesics,Sunday,Early evening (17-20),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,tobacco,Monday,Afternoon (12-17),2,1.0
-025,OmniMart Durham,North East,Local,energy drinks,Monday,Afternoon (12-17),1,0.0
-026,OmniMart York,North East,Supermarket,energy drinks,Saturday,Morning (08-12),2,0.5
-004,OmniMart Greenwich,London,Supermarket,tobacco,Saturday,Afternoon (12-17),2,1.0
-022,OmniMart Preston,North West,Local,analgesics,Saturday,Afternoon (12-17),1,1.0
-003,OmniMart Islington,London,Supermarket,alcohol,Saturday,Early evening (17-20),1,1.0
-005,OmniMart Richmond,London,Local,tobacco,Tuesday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,lottery,Wednesday,Afternoon (12-17),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,tobacco,Wednesday,Late evening (20-22),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Thursday,Early evening (17-20),1,1.0
-013,OmniMart Bath,South West,Local,lottery,Friday,Afternoon (12-17),1,1.0
-005,OmniMart Richmond,London,Local,lottery,Friday,Afternoon (12-17),1,1.0
-030,OmniMart Cardiff,Wales,Supermarket,tobacco,Tuesday,Early evening (17-20),2,0.5
-013,OmniMart Bath,South West,Local,analgesics,Sunday,Early evening (17-20),1,0.0
-008,OmniMart Reading,South East,Superstore,tobacco,Friday,Afternoon (12-17),3,1.0
-002,OmniMart Clapham,London,Local,energy drinks,Friday,Early evening (17-20),1,1.0
-004,OmniMart Greenwich,London,Supermarket,energy drinks,Tuesday,Afternoon (12-17),1,0.0
-003,OmniMart Islington,London,Supermarket,tobacco,Friday,Afternoon (12-17),1,1.0
-009,OmniMart Brighton,South East,Supermarket,analgesics,Monday,Early evening (17-20),1,1.0
-019,OmniMart Coventry,Midlands,Local,alcohol,Saturday,Morning (08-12),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,lottery,Saturday,Early evening (17-20),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,tobacco,Tuesday,Morning (08-12),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Friday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,energy drinks,Sunday,Afternoon (12-17),1,1.0
-022,OmniMart Preston,North West,Local,analgesics,Wednesday,Early evening (17-20),1,1.0
-006,OmniMart Ealing,London,Supermarket,energy drinks,Thursday,Morning (08-12),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,fireworks,Thursday,Afternoon (12-17),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,tobacco,Friday,Afternoon (12-17),1,1.0
-022,OmniMart Preston,North West,Local,fireworks,Saturday,Morning (08-12),1,1.0
-026,OmniMart York,North East,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
-012,OmniMart Bristol,South West,Superstore,fireworks,Saturday,Early evening (17-20),1,1.0
-012,OmniMart Bristol,South West,Superstore,fireworks,Saturday,Late evening (20-22),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,tobacco,Saturday,Late evening (20-22),1,1.0
-026,OmniMart York,North East,Supermarket,fireworks,Monday,Afternoon (12-17),1,1.0
-030,OmniMart Cardiff,Wales,Supermarket,fireworks,Monday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,fireworks,Monday,Late evening (20-22),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,fireworks,Tuesday,Morning (08-12),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,fireworks,Tuesday,Early evening (17-20),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,fireworks,Wednesday,Morning (08-12),1,1.0
-020,OmniMart Manchester,North West,Superstore,fireworks,Wednesday,Afternoon (12-17),1,1.0
-004,OmniMart Greenwich,London,Supermarket,alcohol,Friday,Morning (08-12),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,alcohol,Saturday,Early evening (17-20),2,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,tobacco,Tuesday,Morning (08-12),1,1.0
-020,OmniMart Manchester,North West,Superstore,alcohol,Tuesday,Afternoon (12-17),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,alcohol,Thursday,Early evening (17-20),1,1.0
-007,OmniMart Guildford,South East,Supermarket,tobacco,Tuesday,Early evening (17-20),1,1.0
-004,OmniMart Greenwich,London,Supermarket,analgesics,Thursday,Afternoon (12-17),1,0.0
-008,OmniMart Reading,South East,Superstore,lottery,Friday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Saturday,Morning (08-12),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,tobacco,Tuesday,Afternoon (12-17),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,lottery,Thursday,Early evening (17-20),1,1.0
-007,OmniMart Guildford,South East,Supermarket,alcohol,Saturday,Afternoon (12-17),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,lottery,Saturday,Afternoon (12-17),2,1.0
-010,OmniMart Oxford,South East,Local,alcohol,Sunday,Early evening (17-20),1,1.0
-010,OmniMart Oxford,South East,Local,tobacco,Wednesday,Afternoon (12-17),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Sunday,Afternoon (12-17),1,1.0
-012,OmniMart Bristol,South West,Superstore,lottery,Sunday,Early evening (17-20),1,1.0
-005,OmniMart Richmond,London,Local,alcohol,Sunday,Early evening (17-20),1,1.0
-020,OmniMart Manchester,North West,Superstore,tobacco,Wednesday,Morning (08-12),1,1.0
-019,OmniMart Coventry,Midlands,Local,lottery,Thursday,Morning (08-12),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,alcohol,Thursday,Afternoon (12-17),1,1.0
-020,OmniMart Manchester,North West,Superstore,energy drinks,Friday,Afternoon (12-17),2,0.5
-013,OmniMart Bath,South West,Local,analgesics,Friday,Late evening (20-22),1,0.0
-017,OmniMart Nottingham,Midlands,Supermarket,lottery,Saturday,Early evening (17-20),1,1.0
-026,OmniMart York,North East,Supermarket,analgesics,Saturday,Late evening (20-22),1,0.0
-005,OmniMart Richmond,London,Local,lottery,Monday,Morning (08-12),1,1.0
-023,OmniMart Chester,North West,Supermarket,energy drinks,Tuesday,Morning (08-12),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,analgesics,Tuesday,Early evening (17-20),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,analgesics,Sunday,Late evening (20-22),1,1.0
-005,OmniMart Richmond,London,Local,fireworks,Monday,Early evening (17-20),2,1.0
-029,OmniMart Aberdeen,Scotland,Local,energy drinks,Tuesday,Afternoon (12-17),1,1.0
-019,OmniMart Coventry,Midlands,Local,lottery,Tuesday,Late evening (20-22),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,fireworks,Wednesday,Afternoon (12-17),2,1.0
-019,OmniMart Coventry,Midlands,Local,fireworks,Thursday,Early evening (17-20),2,1.0
-010,OmniMart Oxford,South East,Local,fireworks,Thursday,Early evening (17-20),1,1.0
-014,OmniMart Exeter,South West,Supermarket,analgesics,Friday,Early evening (17-20),1,1.0
-007,OmniMart Guildford,South East,Supermarket,energy drinks,Friday,Early evening (17-20),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,tobacco,Saturday,Early evening (17-20),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,energy drinks,Thursday,Early evening (17-20),1,1.0
-013,OmniMart Bath,South West,Local,energy drinks,Friday,Afternoon (12-17),1,1.0
-001,OmniMart Camden,London,Local,analgesics,Saturday,Morning (08-12),2,0.5
-016,OmniMart Birmingham,Midlands,Superstore,energy drinks,Tuesday,Afternoon (12-17),2,0.0
-026,OmniMart York,North East,Supermarket,alcohol,Tuesday,Late evening (20-22),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,energy drinks,Wednesday,Afternoon (12-17),1,1.0
-005,OmniMart Richmond,London,Local,energy drinks,Saturday,Morning (08-12),1,1.0
-006,OmniMart Ealing,London,Supermarket,fireworks,Sunday,Afternoon (12-17),1,1.0
-008,OmniMart Reading,South East,Superstore,analgesics,Tuesday,Late evening (20-22),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,lottery,Friday,Afternoon (12-17),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,alcohol,Sunday,Early evening (17-20),2,1.0
-008,OmniMart Reading,South East,Superstore,tobacco,Tuesday,Morning (08-12),1,1.0
-019,OmniMart Coventry,Midlands,Local,alcohol,Friday,Early evening (17-20),1,1.0
-010,OmniMart Oxford,South East,Local,tobacco,Thursday,Early evening (17-20),2,1.0
-004,OmniMart Greenwich,London,Supermarket,tobacco,Friday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,tobacco,Friday,Early evening (17-20),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,analgesics,Sunday,Early evening (17-20),1,1.0
-009,OmniMart Brighton,South East,Supermarket,lottery,Tuesday,Morning (08-12),1,1.0
-012,OmniMart Bristol,South West,Superstore,analgesics,Friday,Early evening (17-20),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,energy drinks,Saturday,Early evening (17-20),1,0.0
-007,OmniMart Guildford,South East,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,energy drinks,Monday,Afternoon (12-17),1,0.0
-003,OmniMart Islington,London,Supermarket,energy drinks,Friday,Morning (08-12),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,lottery,Saturday,Early evening (17-20),1,1.0
-013,OmniMart Bath,South West,Local,lottery,Tuesday,Morning (08-12),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,fireworks,Tuesday,Afternoon (12-17),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,lottery,Tuesday,Afternoon (12-17),1,1.0
-007,OmniMart Guildford,South East,Supermarket,lottery,Wednesday,Morning (08-12),1,1.0
-026,OmniMart York,North East,Supermarket,tobacco,Friday,Early evening (17-20),1,1.0
-023,OmniMart Chester,North West,Supermarket,analgesics,Sunday,Morning (08-12),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,analgesics,Tuesday,Early evening (17-20),1,1.0
-008,OmniMart Reading,South East,Superstore,energy drinks,Wednesday,Afternoon (12-17),1,1.0
-020,OmniMart Manchester,North West,Superstore,alcohol,Sunday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,alcohol,Monday,Late evening (20-22),1,1.0
-007,OmniMart Guildford,South East,Supermarket,lottery,Tuesday,Morning (08-12),1,1.0
-002,OmniMart Clapham,London,Local,fireworks,Friday,Late evening (20-22),1,1.0
-007,OmniMart Guildford,South East,Supermarket,energy drinks,Tuesday,Morning (08-12),2,1.0
-018,OmniMart Leicester,Midlands,Supermarket,lottery,Friday,Morning (08-12),1,1.0
-030,OmniMart Cardiff,Wales,Supermarket,lottery,Tuesday,Afternoon (12-17),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,analgesics,Thursday,Afternoon (12-17),1,1.0
-006,OmniMart Ealing,London,Supermarket,alcohol,Saturday,Early evening (17-20),1,1.0
-004,OmniMart Greenwich,London,Supermarket,lottery,Sunday,Morning (08-12),1,1.0
-023,OmniMart Chester,North West,Supermarket,energy drinks,Sunday,Early evening (17-20),1,1.0
-014,OmniMart Exeter,South West,Supermarket,energy drinks,Tuesday,Early evening (17-20),1,1.0
-005,OmniMart Richmond,London,Local,alcohol,Wednesday,Morning (08-12),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,analgesics,Thursday,Afternoon (12-17),1,1.0
-001,OmniMart Camden,London,Local,lottery,Monday,Morning (08-12),1,1.0
-003,OmniMart Islington,London,Supermarket,alcohol,Thursday,Afternoon (12-17),1,1.0
-023,OmniMart Chester,North West,Supermarket,energy drinks,Friday,Late evening (20-22),1,1.0
-030,OmniMart Cardiff,Wales,Supermarket,alcohol,Wednesday,Early evening (17-20),1,1.0
-025,OmniMart Durham,North East,Local,tobacco,Monday,Late evening (20-22),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,lottery,Sunday,Early evening (17-20),1,1.0
-012,OmniMart Bristol,South West,Superstore,lottery,Wednesday,Late evening (20-22),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,tobacco,Tuesday,Late evening (20-22),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,lottery,Friday,Morning (08-12),1,1.0
-020,OmniMart Manchester,North West,Superstore,analgesics,Saturday,Afternoon (12-17),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,alcohol,Saturday,Late evening (20-22),1,1.0
-009,OmniMart Brighton,South East,Supermarket,fireworks,Wednesday,Morning (08-12),1,1.0
-019,OmniMart Coventry,Midlands,Local,lottery,Wednesday,Morning (08-12),1,1.0
-001,OmniMart Camden,London,Local,energy drinks,Wednesday,Afternoon (12-17),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
-025,OmniMart Durham,North East,Local,alcohol,Saturday,Afternoon (12-17),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,alcohol,Sunday,Late evening (20-22),1,1.0
-013,OmniMart Bath,South West,Local,alcohol,Thursday,Early evening (17-20),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,alcohol,Thursday,Early evening (17-20),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,alcohol,Saturday,Early evening (17-20),1,1.0
-001,OmniMart Camden,London,Local,lottery,Thursday,Afternoon (12-17),1,1.0
-010,OmniMart Oxford,South East,Local,lottery,Friday,Early evening (17-20),1,1.0
-014,OmniMart Exeter,South West,Supermarket,energy drinks,Saturday,Afternoon (12-17),1,1.0
-023,OmniMart Chester,North West,Supermarket,tobacco,Thursday,Morning (08-12),1,1.0
-001,OmniMart Camden,London,Local,lottery,Friday,Early evening (17-20),1,1.0
-002,OmniMart Clapham,London,Local,alcohol,Saturday,Late evening (20-22),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,analgesics,Tuesday,Early evening (17-20),1,0.0
-008,OmniMart Reading,South East,Superstore,lottery,Wednesday,Morning (08-12),1,1.0
-012,OmniMart Bristol,South West,Superstore,energy drinks,Friday,Afternoon (12-17),1,1.0
-008,OmniMart Reading,South East,Superstore,analgesics,Monday,Afternoon (12-17),1,0.0
-019,OmniMart Coventry,Midlands,Local,energy drinks,Friday,Early evening (17-20),1,1.0
+013,OmniMart Bath,South West,Local,lottery,Saturday,Morning (08-12),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,alcohol,Sunday,Morning (08-12),1,1.0
+010,OmniMart Oxford,South East,Local,fireworks,Sunday,Early evening (17-20),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,energy drinks,Monday,Morning (08-12),2,0.5
+030,OmniMart Cardiff,Wales,Supermarket,lottery,Monday,Afternoon (12-17),2,1.0
+001,OmniMart Camden,London,Local,alcohol,Wednesday,Morning (08-12),1,1.0
+025,OmniMart Durham,North East,Local,analgesics,Thursday,Afternoon (12-17),1,1.0
+010,OmniMart Oxford,South East,Local,analgesics,Saturday,Morning (08-12),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,analgesics,Saturday,Afternoon (12-17),1,1.0
+005,OmniMart Richmond,London,Local,energy drinks,Sunday,Morning (08-12),1,1.0
+014,OmniMart Exeter,South West,Supermarket,fireworks,Wednesday,Morning (08-12),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,analgesics,Wednesday,Early evening (17-20),1,1.0
+014,OmniMart Exeter,South West,Supermarket,lottery,Friday,Afternoon (12-17),1,1.0
+020,OmniMart Manchester,North West,Superstore,lottery,Friday,Late evening (20-22),1,1.0
+010,OmniMart Oxford,South East,Local,analgesics,Sunday,Afternoon (12-17),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,tobacco,Monday,Late evening (20-22),1,1.0
+005,OmniMart Richmond,London,Local,lottery,Thursday,Morning (08-12),1,1.0
+023,OmniMart Chester,North West,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
+030,OmniMart Cardiff,Wales,Supermarket,alcohol,Sunday,Morning (08-12),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,analgesics,Monday,Early evening (17-20),1,1.0
+005,OmniMart Richmond,London,Local,tobacco,Tuesday,Afternoon (12-17),2,1.0
+024,OmniMart Newcastle,North East,Supermarket,alcohol,Tuesday,Afternoon (12-17),2,1.0
+005,OmniMart Richmond,London,Local,tobacco,Thursday,Morning (08-12),1,1.0
+023,OmniMart Chester,North West,Supermarket,analgesics,Friday,Early evening (17-20),1,1.0
+023,OmniMart Chester,North West,Supermarket,analgesics,Saturday,Morning (08-12),1,0.0
+015,OmniMart Plymouth,South West,Supermarket,alcohol,Saturday,Afternoon (12-17),1,1.0
+014,OmniMart Exeter,South West,Supermarket,lottery,Tuesday,Early evening (17-20),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,energy drinks,Friday,Early evening (17-20),1,0.0
+030,OmniMart Cardiff,Wales,Supermarket,analgesics,Friday,Early evening (17-20),1,0.0
+030,OmniMart Cardiff,Wales,Supermarket,lottery,Saturday,Early evening (17-20),2,0.5
+004,OmniMart Greenwich,London,Supermarket,energy drinks,Saturday,Late evening (20-22),1,1.0
+022,OmniMart Preston,North West,Local,alcohol,Saturday,Early evening (17-20),2,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,fireworks,Thursday,Morning (08-12),1,1.0
+012,OmniMart Bristol,South West,Superstore,alcohol,Saturday,Morning (08-12),2,1.0
+007,OmniMart Guildford,South East,Supermarket,fireworks,Sunday,Afternoon (12-17),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,energy drinks,Sunday,Afternoon (12-17),2,1.0
+021,OmniMart Liverpool,North West,Supermarket,alcohol,Friday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,lottery,Tuesday,Afternoon (12-17),2,0.5
+022,OmniMart Preston,North West,Local,analgesics,Saturday,Late evening (20-22),1,1.0
+002,OmniMart Clapham,London,Local,energy drinks,Sunday,Afternoon (12-17),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,analgesics,Thursday,Early evening (17-20),1,0.0
+008,OmniMart Reading,South East,Superstore,alcohol,Friday,Early evening (17-20),1,1.0
+004,OmniMart Greenwich,London,Supermarket,energy drinks,Saturday,Early evening (17-20),1,0.0
+020,OmniMart Manchester,North West,Superstore,analgesics,Sunday,Early evening (17-20),2,0.5
+001,OmniMart Camden,London,Local,fireworks,Wednesday,Afternoon (12-17),2,0.5
+017,OmniMart Nottingham,Midlands,Supermarket,energy drinks,Friday,Morning (08-12),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,tobacco,Saturday,Afternoon (12-17),2,1.0
+022,OmniMart Preston,North West,Local,analgesics,Saturday,Early evening (17-20),1,1.0
+020,OmniMart Manchester,North West,Superstore,tobacco,Saturday,Early evening (17-20),2,1.0
+008,OmniMart Reading,South East,Superstore,tobacco,Monday,Afternoon (12-17),1,1.0
+006,OmniMart Ealing,London,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
+007,OmniMart Guildford,South East,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
+006,OmniMart Ealing,London,Supermarket,tobacco,Monday,Afternoon (12-17),1,1.0
+004,OmniMart Greenwich,London,Supermarket,lottery,Monday,Early evening (17-20),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,lottery,Wednesday,Early evening (17-20),1,1.0
+009,OmniMart Brighton,South East,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
+008,OmniMart Reading,South East,Superstore,lottery,Saturday,Morning (08-12),1,1.0
+004,OmniMart Greenwich,London,Supermarket,analgesics,Saturday,Afternoon (12-17),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,energy drinks,Saturday,Late evening (20-22),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,analgesics,Monday,Early evening (17-20),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,analgesics,Sunday,Afternoon (12-17),1,1.0
+006,OmniMart Ealing,London,Supermarket,energy drinks,Sunday,Early evening (17-20),1,0.0
+018,OmniMart Leicester,Midlands,Supermarket,analgesics,Tuesday,Morning (08-12),1,1.0
+022,OmniMart Preston,North West,Local,energy drinks,Saturday,Morning (08-12),2,1.0
+007,OmniMart Guildford,South East,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
+023,OmniMart Chester,North West,Supermarket,fireworks,Saturday,Early evening (17-20),1,1.0
+009,OmniMart Brighton,South East,Supermarket,fireworks,Monday,Afternoon (12-17),2,1.0
+021,OmniMart Liverpool,North West,Supermarket,fireworks,Monday,Afternoon (12-17),1,1.0
+005,OmniMart Richmond,London,Local,fireworks,Tuesday,Morning (08-12),1,1.0
+013,OmniMart Bath,South West,Local,fireworks,Tuesday,Afternoon (12-17),1,1.0
+007,OmniMart Guildford,South East,Supermarket,fireworks,Tuesday,Early evening (17-20),1,1.0
+001,OmniMart Camden,London,Local,fireworks,Tuesday,Late evening (20-22),2,1.0
+020,OmniMart Manchester,North West,Superstore,fireworks,Wednesday,Early evening (17-20),1,0.0
+006,OmniMart Ealing,London,Supermarket,lottery,Wednesday,Early evening (17-20),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,fireworks,Wednesday,Early evening (17-20),1,1.0
+007,OmniMart Guildford,South East,Supermarket,analgesics,Thursday,Morning (08-12),1,0.0
+029,OmniMart Aberdeen,Scotland,Local,energy drinks,Thursday,Late evening (20-22),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,tobacco,Monday,Morning (08-12),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,alcohol,Friday,Morning (08-12),2,0.5
+020,OmniMart Manchester,North West,Superstore,tobacco,Friday,Early evening (17-20),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,tobacco,Tuesday,Afternoon (12-17),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,lottery,Friday,Late evening (20-22),1,1.0
+026,OmniMart York,North East,Supermarket,lottery,Saturday,Morning (08-12),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Monday,Early evening (17-20),1,1.0
+019,OmniMart Coventry,Midlands,Local,analgesics,Monday,Afternoon (12-17),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,lottery,Wednesday,Afternoon (12-17),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,lottery,Saturday,Afternoon (12-17),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,analgesics,Monday,Late evening (20-22),1,1.0
+026,OmniMart York,North East,Supermarket,tobacco,Wednesday,Afternoon (12-17),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,alcohol,Thursday,Morning (08-12),1,1.0
+007,OmniMart Guildford,South East,Supermarket,tobacco,Thursday,Early evening (17-20),1,1.0
+003,OmniMart Islington,London,Supermarket,analgesics,Sunday,Morning (08-12),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,lottery,Sunday,Afternoon (12-17),1,1.0
+023,OmniMart Chester,North West,Supermarket,lottery,Monday,Early evening (17-20),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,energy drinks,Monday,Early evening (17-20),1,1.0
+022,OmniMart Preston,North West,Local,tobacco,Tuesday,Early evening (17-20),1,1.0
+007,OmniMart Guildford,South East,Supermarket,alcohol,Wednesday,Late evening (20-22),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,energy drinks,Friday,Early evening (17-20),2,0.5
+003,OmniMart Islington,London,Supermarket,alcohol,Saturday,Afternoon (12-17),1,1.0
+023,OmniMart Chester,North West,Supermarket,energy drinks,Saturday,Early evening (17-20),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,alcohol,Friday,Early evening (17-20),1,1.0
+008,OmniMart Reading,South East,Superstore,fireworks,Sunday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,analgesics,Monday,Late evening (20-22),1,1.0
+006,OmniMart Ealing,London,Supermarket,fireworks,Tuesday,Afternoon (12-17),1,1.0
+003,OmniMart Islington,London,Supermarket,fireworks,Wednesday,Afternoon (12-17),1,1.0
+006,OmniMart Ealing,London,Supermarket,fireworks,Wednesday,Afternoon (12-17),1,0.0
+028,OmniMart Glasgow,Scotland,Supermarket,fireworks,Wednesday,Afternoon (12-17),1,1.0
+023,OmniMart Chester,North West,Supermarket,fireworks,Thursday,Afternoon (12-17),2,1.0
+018,OmniMart Leicester,Midlands,Supermarket,fireworks,Thursday,Late evening (20-22),1,1.0
+001,OmniMart Camden,London,Local,energy drinks,Saturday,Morning (08-12),1,1.0
+030,OmniMart Cardiff,Wales,Supermarket,fireworks,Monday,Afternoon (12-17),1,0.0
+004,OmniMart Greenwich,London,Supermarket,lottery,Saturday,Morning (08-12),1,1.0
+025,OmniMart Durham,North East,Local,energy drinks,Saturday,Morning (08-12),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,tobacco,Monday,Morning (08-12),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,alcohol,Tuesday,Afternoon (12-17),1,1.0
+005,OmniMart Richmond,London,Local,energy drinks,Friday,Early evening (17-20),1,1.0
+010,OmniMart Oxford,South East,Local,energy drinks,Friday,Late evening (20-22),1,0.0
+026,OmniMart York,North East,Supermarket,analgesics,Saturday,Afternoon (12-17),1,0.0
+018,OmniMart Leicester,Midlands,Supermarket,lottery,Thursday,Afternoon (12-17),1,1.0
+020,OmniMart Manchester,North West,Superstore,energy drinks,Wednesday,Morning (08-12),1,1.0
+013,OmniMart Bath,South West,Local,energy drinks,Friday,Early evening (17-20),1,0.0
+005,OmniMart Richmond,London,Local,lottery,Friday,Early evening (17-20),1,0.0
+004,OmniMart Greenwich,London,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,fireworks,Monday,Afternoon (12-17),1,1.0
+003,OmniMart Islington,London,Supermarket,tobacco,Friday,Early evening (17-20),1,1.0
+026,OmniMart York,North East,Supermarket,tobacco,Saturday,Morning (08-12),2,1.0
+020,OmniMart Manchester,North West,Superstore,energy drinks,Sunday,Morning (08-12),1,1.0
+013,OmniMart Bath,South West,Local,energy drinks,Thursday,Morning (08-12),1,1.0
+014,OmniMart Exeter,South West,Supermarket,energy drinks,Friday,Morning (08-12),1,1.0
+022,OmniMart Preston,North West,Local,alcohol,Saturday,Late evening (20-22),1,1.0
+009,OmniMart Brighton,South East,Supermarket,tobacco,Tuesday,Afternoon (12-17),1,1.0
+002,OmniMart Clapham,London,Local,analgesics,Friday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,analgesics,Friday,Early evening (17-20),2,1.0
+015,OmniMart Plymouth,South West,Supermarket,energy drinks,Monday,Morning (08-12),1,1.0
+002,OmniMart Clapham,London,Local,analgesics,Thursday,Morning (08-12),1,1.0
+006,OmniMart Ealing,London,Supermarket,energy drinks,Wednesday,Afternoon (12-17),1,0.0
+024,OmniMart Newcastle,North East,Supermarket,lottery,Saturday,Afternoon (12-17),1,1.0
+010,OmniMart Oxford,South East,Local,tobacco,Saturday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,lottery,Monday,Late evening (20-22),1,1.0
+004,OmniMart Greenwich,London,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,energy drinks,Saturday,Afternoon (12-17),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,energy drinks,Saturday,Early evening (17-20),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,fireworks,Saturday,Late evening (20-22),1,1.0
+022,OmniMart Preston,North West,Local,energy drinks,Wednesday,Early evening (17-20),1,1.0
+002,OmniMart Clapham,London,Local,lottery,Friday,Early evening (17-20),1,1.0
+019,OmniMart Coventry,Midlands,Local,fireworks,Saturday,Afternoon (12-17),1,1.0
+009,OmniMart Brighton,South East,Supermarket,tobacco,Saturday,Afternoon (12-17),1,1.0
+010,OmniMart Oxford,South East,Local,alcohol,Monday,Early evening (17-20),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,energy drinks,Wednesday,Morning (08-12),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,lottery,Thursday,Morning (08-12),1,1.0
+003,OmniMart Islington,London,Supermarket,alcohol,Tuesday,Late evening (20-22),1,1.0
+013,OmniMart Bath,South West,Local,lottery,Wednesday,Morning (08-12),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,alcohol,Wednesday,Afternoon (12-17),1,1.0
+026,OmniMart York,North East,Supermarket,tobacco,Thursday,Early evening (17-20),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,energy drinks,Tuesday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Thursday,Afternoon (12-17),1,1.0
+010,OmniMart Oxford,South East,Local,energy drinks,Friday,Early evening (17-20),1,1.0
+012,OmniMart Bristol,South West,Superstore,energy drinks,Wednesday,Early evening (17-20),1,1.0
+009,OmniMart Brighton,South East,Supermarket,lottery,Thursday,Morning (08-12),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,tobacco,Wednesday,Afternoon (12-17),1,1.0
+025,OmniMart Durham,North East,Local,energy drinks,Thursday,Morning (08-12),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,tobacco,Thursday,Afternoon (12-17),1,1.0
+013,OmniMart Bath,South West,Local,analgesics,Thursday,Afternoon (12-17),1,1.0
+019,OmniMart Coventry,Midlands,Local,energy drinks,Saturday,Afternoon (12-17),1,1.0
+013,OmniMart Bath,South West,Local,tobacco,Sunday,Morning (08-12),1,1.0
+012,OmniMart Bristol,South West,Superstore,energy drinks,Sunday,Afternoon (12-17),1,0.0
+015,OmniMart Plymouth,South West,Supermarket,lottery,Wednesday,Early evening (17-20),2,1.0
+020,OmniMart Manchester,North West,Superstore,analgesics,Thursday,Morning (08-12),1,0.0
+007,OmniMart Guildford,South East,Supermarket,tobacco,Friday,Late evening (20-22),1,1.0
+007,OmniMart Guildford,South East,Supermarket,analgesics,Monday,Morning (08-12),1,0.0
+020,OmniMart Manchester,North West,Superstore,energy drinks,Monday,Afternoon (12-17),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,analgesics,Tuesday,Early evening (17-20),1,1.0
+004,OmniMart Greenwich,London,Supermarket,analgesics,Thursday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,energy drinks,Friday,Early evening (17-20),1,1.0
+014,OmniMart Exeter,South West,Supermarket,fireworks,Friday,Early evening (17-20),2,1.0
+009,OmniMart Brighton,South East,Supermarket,alcohol,Friday,Early evening (17-20),1,0.0
+018,OmniMart Leicester,Midlands,Supermarket,lottery,Saturday,Early evening (17-20),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,lottery,Sunday,Morning (08-12),1,1.0
+008,OmniMart Reading,South East,Superstore,analgesics,Tuesday,Afternoon (12-17),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,energy drinks,Saturday,Morning (08-12),1,1.0
+002,OmniMart Clapham,London,Local,alcohol,Tuesday,Afternoon (12-17),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,analgesics,Tuesday,Afternoon (12-17),1,0.0
+008,OmniMart Reading,South East,Superstore,alcohol,Tuesday,Afternoon (12-17),1,1.0
+019,OmniMart Coventry,Midlands,Local,lottery,Sunday,Late evening (20-22),1,1.0
+025,OmniMart Durham,North East,Local,alcohol,Saturday,Early evening (17-20),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,tobacco,Saturday,Early evening (17-20),1,1.0
+012,OmniMart Bristol,South West,Superstore,energy drinks,Saturday,Morning (08-12),1,1.0
+005,OmniMart Richmond,London,Local,alcohol,Saturday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Sunday,Late evening (20-22),1,1.0
+020,OmniMart Manchester,North West,Superstore,fireworks,Tuesday,Late evening (20-22),1,1.0
 008,OmniMart Reading,South East,Superstore,alcohol,Saturday,Morning (08-12),1,1.0
 019,OmniMart Coventry,Midlands,Local,alcohol,Saturday,Early evening (17-20),2,1.0
 009,OmniMart Brighton,South East,Supermarket,lottery,Tuesday,Late evening (20-22),1,1.0
@@ -395,199 +402,192 @@ store_number,shop_name,region,format,category,day_of_week,time_of_day_band,test_
 019,OmniMart Coventry,Midlands,Local,energy drinks,Wednesday,Early evening (17-20),1,1.0
 015,OmniMart Plymouth,South West,Supermarket,analgesics,Thursday,Afternoon (12-17),1,1.0
 019,OmniMart Coventry,Midlands,Local,analgesics,Friday,Morning (08-12),1,1.0
-013,OmniMart Bath,South West,Local,lottery,Saturday,Morning (08-12),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,alcohol,Sunday,Morning (08-12),1,1.0
-010,OmniMart Oxford,South East,Local,fireworks,Sunday,Early evening (17-20),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,energy drinks,Monday,Morning (08-12),2,0.5
-030,OmniMart Cardiff,Wales,Supermarket,lottery,Monday,Afternoon (12-17),2,1.0
-001,OmniMart Camden,London,Local,alcohol,Wednesday,Morning (08-12),1,1.0
-025,OmniMart Durham,North East,Local,analgesics,Thursday,Afternoon (12-17),1,1.0
-010,OmniMart Oxford,South East,Local,analgesics,Saturday,Morning (08-12),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,analgesics,Saturday,Afternoon (12-17),1,1.0
-005,OmniMart Richmond,London,Local,energy drinks,Sunday,Morning (08-12),1,1.0
-014,OmniMart Exeter,South West,Supermarket,fireworks,Wednesday,Morning (08-12),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,analgesics,Wednesday,Early evening (17-20),1,1.0
-014,OmniMart Exeter,South West,Supermarket,lottery,Friday,Afternoon (12-17),1,1.0
-020,OmniMart Manchester,North West,Superstore,lottery,Friday,Late evening (20-22),1,1.0
-010,OmniMart Oxford,South East,Local,analgesics,Sunday,Afternoon (12-17),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,tobacco,Monday,Late evening (20-22),1,1.0
-005,OmniMart Richmond,London,Local,lottery,Thursday,Morning (08-12),1,1.0
-023,OmniMart Chester,North West,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
-030,OmniMart Cardiff,Wales,Supermarket,alcohol,Sunday,Morning (08-12),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,analgesics,Monday,Early evening (17-20),1,1.0
-005,OmniMart Richmond,London,Local,tobacco,Tuesday,Afternoon (12-17),2,1.0
-024,OmniMart Newcastle,North East,Supermarket,alcohol,Tuesday,Afternoon (12-17),2,1.0
-005,OmniMart Richmond,London,Local,tobacco,Thursday,Morning (08-12),1,1.0
-023,OmniMart Chester,North West,Supermarket,analgesics,Friday,Early evening (17-20),1,1.0
-023,OmniMart Chester,North West,Supermarket,analgesics,Saturday,Morning (08-12),1,0.0
-015,OmniMart Plymouth,South West,Supermarket,alcohol,Saturday,Afternoon (12-17),1,1.0
-014,OmniMart Exeter,South West,Supermarket,lottery,Tuesday,Early evening (17-20),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,energy drinks,Friday,Early evening (17-20),1,0.0
-030,OmniMart Cardiff,Wales,Supermarket,analgesics,Friday,Early evening (17-20),1,0.0
-030,OmniMart Cardiff,Wales,Supermarket,lottery,Saturday,Early evening (17-20),2,0.5
-004,OmniMart Greenwich,London,Supermarket,energy drinks,Saturday,Late evening (20-22),1,1.0
-022,OmniMart Preston,North West,Local,alcohol,Saturday,Early evening (17-20),2,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,fireworks,Thursday,Morning (08-12),1,1.0
-012,OmniMart Bristol,South West,Superstore,alcohol,Saturday,Morning (08-12),2,1.0
-007,OmniMart Guildford,South East,Supermarket,fireworks,Sunday,Afternoon (12-17),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,energy drinks,Sunday,Afternoon (12-17),2,1.0
-021,OmniMart Liverpool,North West,Supermarket,alcohol,Friday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,lottery,Tuesday,Afternoon (12-17),2,0.5
-022,OmniMart Preston,North West,Local,analgesics,Saturday,Late evening (20-22),1,1.0
-002,OmniMart Clapham,London,Local,energy drinks,Sunday,Afternoon (12-17),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,analgesics,Thursday,Early evening (17-20),1,0.0
-008,OmniMart Reading,South East,Superstore,alcohol,Friday,Early evening (17-20),1,1.0
-004,OmniMart Greenwich,London,Supermarket,energy drinks,Saturday,Early evening (17-20),1,0.0
-020,OmniMart Manchester,North West,Superstore,analgesics,Sunday,Early evening (17-20),2,0.5
-001,OmniMart Camden,London,Local,fireworks,Wednesday,Afternoon (12-17),2,0.5
-017,OmniMart Nottingham,Midlands,Supermarket,energy drinks,Friday,Morning (08-12),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,tobacco,Saturday,Afternoon (12-17),2,1.0
-022,OmniMart Preston,North West,Local,analgesics,Saturday,Early evening (17-20),1,1.0
-020,OmniMart Manchester,North West,Superstore,tobacco,Saturday,Early evening (17-20),2,1.0
-008,OmniMart Reading,South East,Superstore,tobacco,Monday,Afternoon (12-17),1,1.0
-006,OmniMart Ealing,London,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
-007,OmniMart Guildford,South East,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
-006,OmniMart Ealing,London,Supermarket,tobacco,Monday,Afternoon (12-17),1,1.0
-004,OmniMart Greenwich,London,Supermarket,lottery,Monday,Early evening (17-20),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,lottery,Wednesday,Early evening (17-20),1,1.0
-009,OmniMart Brighton,South East,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
-008,OmniMart Reading,South East,Superstore,lottery,Saturday,Morning (08-12),1,1.0
-004,OmniMart Greenwich,London,Supermarket,analgesics,Saturday,Afternoon (12-17),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,energy drinks,Saturday,Late evening (20-22),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,analgesics,Monday,Early evening (17-20),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,analgesics,Sunday,Afternoon (12-17),1,1.0
-006,OmniMart Ealing,London,Supermarket,energy drinks,Sunday,Early evening (17-20),1,0.0
-018,OmniMart Leicester,Midlands,Supermarket,analgesics,Tuesday,Morning (08-12),1,1.0
-022,OmniMart Preston,North West,Local,energy drinks,Saturday,Morning (08-12),2,1.0
-007,OmniMart Guildford,South East,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
-023,OmniMart Chester,North West,Supermarket,fireworks,Saturday,Early evening (17-20),1,1.0
-009,OmniMart Brighton,South East,Supermarket,fireworks,Monday,Afternoon (12-17),2,1.0
-021,OmniMart Liverpool,North West,Supermarket,fireworks,Monday,Afternoon (12-17),1,1.0
-005,OmniMart Richmond,London,Local,fireworks,Tuesday,Morning (08-12),1,1.0
-013,OmniMart Bath,South West,Local,fireworks,Tuesday,Afternoon (12-17),1,1.0
-007,OmniMart Guildford,South East,Supermarket,fireworks,Tuesday,Early evening (17-20),1,1.0
-001,OmniMart Camden,London,Local,fireworks,Tuesday,Late evening (20-22),2,1.0
-020,OmniMart Manchester,North West,Superstore,fireworks,Wednesday,Early evening (17-20),1,0.0
-006,OmniMart Ealing,London,Supermarket,lottery,Wednesday,Early evening (17-20),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,fireworks,Wednesday,Early evening (17-20),1,1.0
-007,OmniMart Guildford,South East,Supermarket,analgesics,Thursday,Morning (08-12),1,0.0
-029,OmniMart Aberdeen,Scotland,Local,energy drinks,Thursday,Late evening (20-22),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,tobacco,Monday,Morning (08-12),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,alcohol,Friday,Morning (08-12),2,0.5
-020,OmniMart Manchester,North West,Superstore,tobacco,Friday,Early evening (17-20),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,tobacco,Tuesday,Afternoon (12-17),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,lottery,Friday,Late evening (20-22),1,1.0
-026,OmniMart York,North East,Supermarket,lottery,Saturday,Morning (08-12),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Monday,Early evening (17-20),1,1.0
-019,OmniMart Coventry,Midlands,Local,analgesics,Monday,Afternoon (12-17),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,lottery,Wednesday,Afternoon (12-17),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,lottery,Saturday,Afternoon (12-17),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,analgesics,Monday,Late evening (20-22),1,1.0
-026,OmniMart York,North East,Supermarket,tobacco,Wednesday,Afternoon (12-17),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,alcohol,Thursday,Morning (08-12),1,1.0
-007,OmniMart Guildford,South East,Supermarket,tobacco,Thursday,Early evening (17-20),1,1.0
-003,OmniMart Islington,London,Supermarket,analgesics,Sunday,Morning (08-12),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,lottery,Sunday,Afternoon (12-17),1,1.0
-023,OmniMart Chester,North West,Supermarket,lottery,Monday,Early evening (17-20),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,energy drinks,Monday,Early evening (17-20),1,1.0
-022,OmniMart Preston,North West,Local,tobacco,Tuesday,Early evening (17-20),1,1.0
-007,OmniMart Guildford,South East,Supermarket,alcohol,Wednesday,Late evening (20-22),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,energy drinks,Friday,Early evening (17-20),2,0.5
-003,OmniMart Islington,London,Supermarket,alcohol,Saturday,Afternoon (12-17),1,1.0
-023,OmniMart Chester,North West,Supermarket,energy drinks,Saturday,Early evening (17-20),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,alcohol,Friday,Early evening (17-20),1,1.0
-008,OmniMart Reading,South East,Superstore,fireworks,Sunday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,analgesics,Monday,Late evening (20-22),1,1.0
-006,OmniMart Ealing,London,Supermarket,fireworks,Tuesday,Afternoon (12-17),1,1.0
-003,OmniMart Islington,London,Supermarket,fireworks,Wednesday,Afternoon (12-17),1,1.0
-006,OmniMart Ealing,London,Supermarket,fireworks,Wednesday,Afternoon (12-17),1,0.0
-028,OmniMart Glasgow,Scotland,Supermarket,fireworks,Wednesday,Afternoon (12-17),1,1.0
-023,OmniMart Chester,North West,Supermarket,fireworks,Thursday,Afternoon (12-17),2,1.0
-018,OmniMart Leicester,Midlands,Supermarket,fireworks,Thursday,Late evening (20-22),1,1.0
-001,OmniMart Camden,London,Local,energy drinks,Saturday,Morning (08-12),1,1.0
-030,OmniMart Cardiff,Wales,Supermarket,fireworks,Monday,Afternoon (12-17),1,0.0
-004,OmniMart Greenwich,London,Supermarket,lottery,Saturday,Morning (08-12),1,1.0
-025,OmniMart Durham,North East,Local,energy drinks,Saturday,Morning (08-12),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,tobacco,Monday,Morning (08-12),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,alcohol,Tuesday,Afternoon (12-17),1,1.0
-005,OmniMart Richmond,London,Local,energy drinks,Friday,Early evening (17-20),1,1.0
-010,OmniMart Oxford,South East,Local,energy drinks,Friday,Late evening (20-22),1,0.0
-026,OmniMart York,North East,Supermarket,analgesics,Saturday,Afternoon (12-17),1,0.0
-018,OmniMart Leicester,Midlands,Supermarket,lottery,Thursday,Afternoon (12-17),1,1.0
-020,OmniMart Manchester,North West,Superstore,energy drinks,Wednesday,Morning (08-12),1,1.0
-013,OmniMart Bath,South West,Local,energy drinks,Friday,Early evening (17-20),1,0.0
-005,OmniMart Richmond,London,Local,lottery,Friday,Early evening (17-20),1,0.0
-004,OmniMart Greenwich,London,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,fireworks,Monday,Afternoon (12-17),1,1.0
-003,OmniMart Islington,London,Supermarket,tobacco,Friday,Early evening (17-20),1,1.0
-026,OmniMart York,North East,Supermarket,tobacco,Saturday,Morning (08-12),2,1.0
-020,OmniMart Manchester,North West,Superstore,energy drinks,Sunday,Morning (08-12),1,1.0
-013,OmniMart Bath,South West,Local,energy drinks,Thursday,Morning (08-12),1,1.0
-014,OmniMart Exeter,South West,Supermarket,energy drinks,Friday,Morning (08-12),1,1.0
-022,OmniMart Preston,North West,Local,alcohol,Saturday,Late evening (20-22),1,1.0
-009,OmniMart Brighton,South East,Supermarket,tobacco,Tuesday,Afternoon (12-17),1,1.0
-002,OmniMart Clapham,London,Local,analgesics,Friday,Afternoon (12-17),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,analgesics,Friday,Early evening (17-20),2,1.0
-015,OmniMart Plymouth,South West,Supermarket,energy drinks,Monday,Morning (08-12),1,1.0
-002,OmniMart Clapham,London,Local,analgesics,Thursday,Morning (08-12),1,1.0
-006,OmniMart Ealing,London,Supermarket,energy drinks,Wednesday,Afternoon (12-17),1,0.0
-024,OmniMart Newcastle,North East,Supermarket,lottery,Saturday,Afternoon (12-17),1,1.0
-010,OmniMart Oxford,South East,Local,tobacco,Saturday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,lottery,Monday,Late evening (20-22),1,1.0
-004,OmniMart Greenwich,London,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
-015,OmniMart Plymouth,South West,Supermarket,energy drinks,Saturday,Afternoon (12-17),1,1.0
-028,OmniMart Glasgow,Scotland,Supermarket,energy drinks,Saturday,Early evening (17-20),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,fireworks,Saturday,Late evening (20-22),1,1.0
-022,OmniMart Preston,North West,Local,energy drinks,Wednesday,Early evening (17-20),1,1.0
-002,OmniMart Clapham,London,Local,lottery,Friday,Early evening (17-20),1,1.0
-019,OmniMart Coventry,Midlands,Local,fireworks,Saturday,Afternoon (12-17),1,1.0
-009,OmniMart Brighton,South East,Supermarket,tobacco,Saturday,Afternoon (12-17),1,1.0
-010,OmniMart Oxford,South East,Local,alcohol,Monday,Early evening (17-20),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,energy drinks,Wednesday,Morning (08-12),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,lottery,Thursday,Morning (08-12),1,1.0
-003,OmniMart Islington,London,Supermarket,alcohol,Tuesday,Late evening (20-22),1,1.0
-013,OmniMart Bath,South West,Local,lottery,Wednesday,Morning (08-12),1,1.0
-011,OmniMart Canterbury,South East,Supermarket,alcohol,Wednesday,Afternoon (12-17),1,1.0
-026,OmniMart York,North East,Supermarket,tobacco,Thursday,Early evening (17-20),1,1.0
-021,OmniMart Liverpool,North West,Supermarket,energy drinks,Tuesday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Thursday,Afternoon (12-17),1,1.0
-010,OmniMart Oxford,South East,Local,energy drinks,Friday,Early evening (17-20),1,1.0
-012,OmniMart Bristol,South West,Superstore,energy drinks,Wednesday,Early evening (17-20),1,1.0
-009,OmniMart Brighton,South East,Supermarket,lottery,Thursday,Morning (08-12),1,1.0
-016,OmniMart Birmingham,Midlands,Superstore,tobacco,Wednesday,Afternoon (12-17),1,1.0
-025,OmniMart Durham,North East,Local,energy drinks,Thursday,Morning (08-12),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,tobacco,Thursday,Afternoon (12-17),1,1.0
-013,OmniMart Bath,South West,Local,analgesics,Thursday,Afternoon (12-17),1,1.0
-019,OmniMart Coventry,Midlands,Local,energy drinks,Saturday,Afternoon (12-17),1,1.0
-013,OmniMart Bath,South West,Local,tobacco,Sunday,Morning (08-12),1,1.0
-012,OmniMart Bristol,South West,Superstore,energy drinks,Sunday,Afternoon (12-17),1,0.0
-015,OmniMart Plymouth,South West,Supermarket,lottery,Wednesday,Early evening (17-20),2,1.0
-020,OmniMart Manchester,North West,Superstore,analgesics,Thursday,Morning (08-12),1,0.0
-007,OmniMart Guildford,South East,Supermarket,tobacco,Friday,Late evening (20-22),1,1.0
-007,OmniMart Guildford,South East,Supermarket,analgesics,Monday,Morning (08-12),1,0.0
-020,OmniMart Manchester,North West,Superstore,energy drinks,Monday,Afternoon (12-17),1,1.0
-029,OmniMart Aberdeen,Scotland,Local,analgesics,Tuesday,Early evening (17-20),1,1.0
-004,OmniMart Greenwich,London,Supermarket,analgesics,Thursday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,energy drinks,Friday,Early evening (17-20),1,1.0
-014,OmniMart Exeter,South West,Supermarket,fireworks,Friday,Early evening (17-20),2,1.0
-009,OmniMart Brighton,South East,Supermarket,alcohol,Friday,Early evening (17-20),1,0.0
-018,OmniMart Leicester,Midlands,Supermarket,lottery,Saturday,Early evening (17-20),1,1.0
-024,OmniMart Newcastle,North East,Supermarket,lottery,Sunday,Morning (08-12),1,1.0
-008,OmniMart Reading,South East,Superstore,analgesics,Tuesday,Afternoon (12-17),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,energy drinks,Saturday,Morning (08-12),1,1.0
-002,OmniMart Clapham,London,Local,alcohol,Tuesday,Afternoon (12-17),1,1.0
-017,OmniMart Nottingham,Midlands,Supermarket,analgesics,Tuesday,Afternoon (12-17),1,0.0
-008,OmniMart Reading,South East,Superstore,alcohol,Tuesday,Afternoon (12-17),1,1.0
-019,OmniMart Coventry,Midlands,Local,lottery,Sunday,Late evening (20-22),1,1.0
-025,OmniMart Durham,North East,Local,alcohol,Saturday,Early evening (17-20),1,1.0
-018,OmniMart Leicester,Midlands,Supermarket,tobacco,Saturday,Early evening (17-20),1,1.0
-012,OmniMart Bristol,South West,Superstore,energy drinks,Saturday,Morning (08-12),1,1.0
-005,OmniMart Richmond,London,Local,alcohol,Saturday,Early evening (17-20),1,1.0
-027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Sunday,Late evening (20-22),1,1.0
-020,OmniMart Manchester,North West,Superstore,fireworks,Tuesday,Late evening (20-22),1,1.0
+004,OmniMart Greenwich,London,Supermarket,tobacco,Sunday,Early evening (17-20),1,1.0
+004,OmniMart Greenwich,London,Supermarket,tobacco,Monday,Early evening (17-20),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,analgesics,Wednesday,Afternoon (12-17),2,0.5
+024,OmniMart Newcastle,North East,Supermarket,analgesics,Saturday,Morning (08-12),1,0.0
+027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Monday,Afternoon (12-17),1,1.0
+019,OmniMart Coventry,Midlands,Local,tobacco,Tuesday,Late evening (20-22),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,fireworks,Wednesday,Morning (08-12),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,lottery,Friday,Early evening (17-20),1,1.0
+009,OmniMart Brighton,South East,Supermarket,analgesics,Friday,Early evening (17-20),1,0.0
+014,OmniMart Exeter,South West,Supermarket,analgesics,Saturday,Early evening (17-20),2,1.0
+007,OmniMart Guildford,South East,Supermarket,tobacco,Saturday,Early evening (17-20),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
+019,OmniMart Coventry,Midlands,Local,alcohol,Wednesday,Morning (08-12),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,tobacco,Thursday,Afternoon (12-17),1,1.0
+003,OmniMart Islington,London,Supermarket,lottery,Thursday,Late evening (20-22),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,tobacco,Friday,Early evening (17-20),1,1.0
+002,OmniMart Clapham,London,Local,energy drinks,Saturday,Morning (08-12),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,energy drinks,Wednesday,Afternoon (12-17),1,1.0
+026,OmniMart York,North East,Supermarket,analgesics,Wednesday,Early evening (17-20),1,0.0
+008,OmniMart Reading,South East,Superstore,fireworks,Friday,Morning (08-12),1,1.0
+001,OmniMart Camden,London,Local,analgesics,Friday,Afternoon (12-17),2,1.0
+014,OmniMart Exeter,South West,Supermarket,alcohol,Friday,Early evening (17-20),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,analgesics,Saturday,Afternoon (12-17),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,lottery,Saturday,Late evening (20-22),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,fireworks,Friday,Afternoon (12-17),1,1.0
+019,OmniMart Coventry,Midlands,Local,tobacco,Saturday,Afternoon (12-17),1,1.0
+022,OmniMart Preston,North West,Local,fireworks,Wednesday,Late evening (20-22),1,1.0
+023,OmniMart Chester,North West,Supermarket,alcohol,Friday,Morning (08-12),1,1.0
+025,OmniMart Durham,North East,Local,analgesics,Sunday,Early evening (17-20),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,tobacco,Monday,Afternoon (12-17),2,1.0
+025,OmniMart Durham,North East,Local,energy drinks,Monday,Afternoon (12-17),1,0.0
+026,OmniMart York,North East,Supermarket,energy drinks,Saturday,Morning (08-12),2,0.5
+004,OmniMart Greenwich,London,Supermarket,tobacco,Saturday,Afternoon (12-17),2,1.0
+022,OmniMart Preston,North West,Local,analgesics,Saturday,Afternoon (12-17),1,1.0
+003,OmniMart Islington,London,Supermarket,alcohol,Saturday,Early evening (17-20),1,1.0
+005,OmniMart Richmond,London,Local,tobacco,Tuesday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,lottery,Wednesday,Afternoon (12-17),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,tobacco,Wednesday,Late evening (20-22),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Thursday,Early evening (17-20),1,1.0
+013,OmniMart Bath,South West,Local,lottery,Friday,Afternoon (12-17),1,1.0
+005,OmniMart Richmond,London,Local,lottery,Friday,Afternoon (12-17),1,1.0
+030,OmniMart Cardiff,Wales,Supermarket,tobacco,Tuesday,Early evening (17-20),2,0.5
+013,OmniMart Bath,South West,Local,analgesics,Sunday,Early evening (17-20),1,0.0
+008,OmniMart Reading,South East,Superstore,tobacco,Friday,Afternoon (12-17),3,1.0
+002,OmniMart Clapham,London,Local,energy drinks,Friday,Early evening (17-20),1,1.0
+004,OmniMart Greenwich,London,Supermarket,energy drinks,Tuesday,Afternoon (12-17),1,0.0
+003,OmniMart Islington,London,Supermarket,tobacco,Friday,Afternoon (12-17),1,1.0
+009,OmniMart Brighton,South East,Supermarket,analgesics,Monday,Early evening (17-20),1,1.0
+019,OmniMart Coventry,Midlands,Local,alcohol,Saturday,Morning (08-12),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,lottery,Saturday,Early evening (17-20),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,tobacco,Tuesday,Morning (08-12),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Friday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,energy drinks,Sunday,Afternoon (12-17),1,1.0
+022,OmniMart Preston,North West,Local,analgesics,Wednesday,Early evening (17-20),1,1.0
+006,OmniMart Ealing,London,Supermarket,energy drinks,Thursday,Morning (08-12),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,fireworks,Thursday,Afternoon (12-17),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,tobacco,Friday,Afternoon (12-17),1,1.0
+022,OmniMart Preston,North West,Local,fireworks,Saturday,Morning (08-12),1,1.0
+026,OmniMart York,North East,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,fireworks,Saturday,Morning (08-12),1,1.0
+012,OmniMart Bristol,South West,Superstore,fireworks,Saturday,Early evening (17-20),1,1.0
+012,OmniMart Bristol,South West,Superstore,fireworks,Saturday,Late evening (20-22),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,tobacco,Saturday,Late evening (20-22),1,1.0
+026,OmniMart York,North East,Supermarket,fireworks,Monday,Afternoon (12-17),1,1.0
+030,OmniMart Cardiff,Wales,Supermarket,fireworks,Monday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,fireworks,Monday,Late evening (20-22),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,fireworks,Tuesday,Morning (08-12),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,fireworks,Tuesday,Early evening (17-20),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,fireworks,Wednesday,Morning (08-12),1,1.0
+020,OmniMart Manchester,North West,Superstore,fireworks,Wednesday,Afternoon (12-17),1,1.0
+004,OmniMart Greenwich,London,Supermarket,alcohol,Friday,Morning (08-12),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,alcohol,Saturday,Early evening (17-20),2,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,tobacco,Tuesday,Morning (08-12),1,1.0
+020,OmniMart Manchester,North West,Superstore,alcohol,Tuesday,Afternoon (12-17),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,alcohol,Thursday,Early evening (17-20),1,1.0
+007,OmniMart Guildford,South East,Supermarket,tobacco,Tuesday,Early evening (17-20),1,1.0
+004,OmniMart Greenwich,London,Supermarket,analgesics,Thursday,Afternoon (12-17),1,0.0
+008,OmniMart Reading,South East,Superstore,lottery,Friday,Early evening (17-20),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,tobacco,Saturday,Morning (08-12),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,tobacco,Tuesday,Afternoon (12-17),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,lottery,Thursday,Early evening (17-20),1,1.0
+007,OmniMart Guildford,South East,Supermarket,alcohol,Saturday,Afternoon (12-17),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,lottery,Saturday,Afternoon (12-17),2,1.0
+010,OmniMart Oxford,South East,Local,alcohol,Sunday,Early evening (17-20),1,1.0
+010,OmniMart Oxford,South East,Local,tobacco,Wednesday,Afternoon (12-17),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,analgesics,Sunday,Afternoon (12-17),1,1.0
+012,OmniMart Bristol,South West,Superstore,lottery,Sunday,Early evening (17-20),1,1.0
+005,OmniMart Richmond,London,Local,alcohol,Sunday,Early evening (17-20),1,1.0
+020,OmniMart Manchester,North West,Superstore,tobacco,Wednesday,Morning (08-12),1,1.0
+019,OmniMart Coventry,Midlands,Local,lottery,Thursday,Morning (08-12),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,alcohol,Thursday,Afternoon (12-17),1,1.0
+020,OmniMart Manchester,North West,Superstore,energy drinks,Friday,Afternoon (12-17),2,0.5
+013,OmniMart Bath,South West,Local,analgesics,Friday,Late evening (20-22),1,0.0
+017,OmniMart Nottingham,Midlands,Supermarket,lottery,Saturday,Early evening (17-20),1,1.0
+026,OmniMart York,North East,Supermarket,analgesics,Saturday,Late evening (20-22),1,0.0
+005,OmniMart Richmond,London,Local,lottery,Monday,Morning (08-12),1,1.0
+023,OmniMart Chester,North West,Supermarket,energy drinks,Tuesday,Morning (08-12),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,analgesics,Tuesday,Early evening (17-20),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,analgesics,Sunday,Late evening (20-22),1,1.0
+005,OmniMart Richmond,London,Local,fireworks,Monday,Early evening (17-20),2,1.0
+029,OmniMart Aberdeen,Scotland,Local,energy drinks,Tuesday,Afternoon (12-17),1,1.0
+019,OmniMart Coventry,Midlands,Local,lottery,Tuesday,Late evening (20-22),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,fireworks,Wednesday,Afternoon (12-17),2,1.0
+019,OmniMart Coventry,Midlands,Local,fireworks,Thursday,Early evening (17-20),2,1.0
+010,OmniMart Oxford,South East,Local,fireworks,Thursday,Early evening (17-20),1,1.0
+014,OmniMart Exeter,South West,Supermarket,analgesics,Friday,Early evening (17-20),1,1.0
+007,OmniMart Guildford,South East,Supermarket,energy drinks,Friday,Early evening (17-20),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,tobacco,Saturday,Early evening (17-20),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,energy drinks,Thursday,Early evening (17-20),1,1.0
+013,OmniMart Bath,South West,Local,energy drinks,Friday,Afternoon (12-17),1,1.0
+001,OmniMart Camden,London,Local,analgesics,Saturday,Morning (08-12),2,0.5
+016,OmniMart Birmingham,Midlands,Superstore,energy drinks,Tuesday,Afternoon (12-17),2,0.0
+026,OmniMart York,North East,Supermarket,alcohol,Tuesday,Late evening (20-22),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,energy drinks,Wednesday,Afternoon (12-17),1,1.0
+005,OmniMart Richmond,London,Local,energy drinks,Saturday,Morning (08-12),1,1.0
+006,OmniMart Ealing,London,Supermarket,fireworks,Sunday,Afternoon (12-17),1,1.0
+008,OmniMart Reading,South East,Superstore,analgesics,Tuesday,Late evening (20-22),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,lottery,Friday,Afternoon (12-17),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,alcohol,Sunday,Early evening (17-20),2,1.0
+008,OmniMart Reading,South East,Superstore,tobacco,Tuesday,Morning (08-12),1,1.0
+019,OmniMart Coventry,Midlands,Local,alcohol,Friday,Early evening (17-20),1,1.0
+010,OmniMart Oxford,South East,Local,tobacco,Thursday,Early evening (17-20),2,1.0
+004,OmniMart Greenwich,London,Supermarket,tobacco,Friday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,tobacco,Friday,Early evening (17-20),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,analgesics,Sunday,Early evening (17-20),1,1.0
+009,OmniMart Brighton,South East,Supermarket,lottery,Tuesday,Morning (08-12),1,1.0
+012,OmniMart Bristol,South West,Superstore,analgesics,Friday,Early evening (17-20),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,energy drinks,Saturday,Early evening (17-20),1,0.0
+007,OmniMart Guildford,South East,Supermarket,lottery,Monday,Afternoon (12-17),1,1.0
+027,OmniMart Edinburgh,Scotland,Superstore,energy drinks,Monday,Afternoon (12-17),1,0.0
+003,OmniMart Islington,London,Supermarket,energy drinks,Friday,Morning (08-12),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,lottery,Saturday,Early evening (17-20),1,1.0
+013,OmniMart Bath,South West,Local,lottery,Tuesday,Morning (08-12),1,1.0
+015,OmniMart Plymouth,South West,Supermarket,fireworks,Tuesday,Afternoon (12-17),1,1.0
+016,OmniMart Birmingham,Midlands,Superstore,lottery,Tuesday,Afternoon (12-17),1,1.0
+007,OmniMart Guildford,South East,Supermarket,lottery,Wednesday,Morning (08-12),1,1.0
+026,OmniMart York,North East,Supermarket,tobacco,Friday,Early evening (17-20),1,1.0
+023,OmniMart Chester,North West,Supermarket,analgesics,Sunday,Morning (08-12),1,1.0
+024,OmniMart Newcastle,North East,Supermarket,analgesics,Tuesday,Early evening (17-20),1,1.0
+008,OmniMart Reading,South East,Superstore,energy drinks,Wednesday,Afternoon (12-17),1,1.0
+020,OmniMart Manchester,North West,Superstore,alcohol,Sunday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,alcohol,Monday,Late evening (20-22),1,1.0
+007,OmniMart Guildford,South East,Supermarket,lottery,Tuesday,Morning (08-12),1,1.0
+002,OmniMart Clapham,London,Local,fireworks,Friday,Late evening (20-22),1,1.0
+007,OmniMart Guildford,South East,Supermarket,energy drinks,Tuesday,Morning (08-12),2,1.0
+018,OmniMart Leicester,Midlands,Supermarket,lottery,Friday,Morning (08-12),1,1.0
+030,OmniMart Cardiff,Wales,Supermarket,lottery,Tuesday,Afternoon (12-17),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,analgesics,Thursday,Afternoon (12-17),1,1.0
+006,OmniMart Ealing,London,Supermarket,alcohol,Saturday,Early evening (17-20),1,1.0
+004,OmniMart Greenwich,London,Supermarket,lottery,Sunday,Morning (08-12),1,1.0
+023,OmniMart Chester,North West,Supermarket,energy drinks,Sunday,Early evening (17-20),1,1.0
+014,OmniMart Exeter,South West,Supermarket,energy drinks,Tuesday,Early evening (17-20),1,1.0
+005,OmniMart Richmond,London,Local,alcohol,Wednesday,Morning (08-12),1,1.0
+017,OmniMart Nottingham,Midlands,Supermarket,analgesics,Thursday,Afternoon (12-17),1,1.0
+001,OmniMart Camden,London,Local,lottery,Monday,Morning (08-12),1,1.0
+003,OmniMart Islington,London,Supermarket,alcohol,Thursday,Afternoon (12-17),1,1.0
+023,OmniMart Chester,North West,Supermarket,energy drinks,Friday,Late evening (20-22),1,1.0
+030,OmniMart Cardiff,Wales,Supermarket,alcohol,Wednesday,Early evening (17-20),1,1.0
+025,OmniMart Durham,North East,Local,tobacco,Monday,Late evening (20-22),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,lottery,Sunday,Early evening (17-20),1,1.0
+012,OmniMart Bristol,South West,Superstore,lottery,Wednesday,Late evening (20-22),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,tobacco,Tuesday,Late evening (20-22),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,lottery,Friday,Morning (08-12),1,1.0
+020,OmniMart Manchester,North West,Superstore,analgesics,Saturday,Afternoon (12-17),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,alcohol,Saturday,Late evening (20-22),1,1.0
+009,OmniMart Brighton,South East,Supermarket,fireworks,Wednesday,Morning (08-12),1,1.0
+019,OmniMart Coventry,Midlands,Local,lottery,Wednesday,Morning (08-12),1,1.0
+001,OmniMart Camden,London,Local,energy drinks,Wednesday,Afternoon (12-17),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,tobacco,Friday,Morning (08-12),1,1.0
+025,OmniMart Durham,North East,Local,alcohol,Saturday,Afternoon (12-17),1,1.0
+018,OmniMart Leicester,Midlands,Supermarket,alcohol,Sunday,Late evening (20-22),1,1.0
+013,OmniMart Bath,South West,Local,alcohol,Thursday,Early evening (17-20),1,1.0
+029,OmniMart Aberdeen,Scotland,Local,alcohol,Thursday,Early evening (17-20),1,1.0
+021,OmniMart Liverpool,North West,Supermarket,energy drinks,Friday,Afternoon (12-17),1,1.0
+011,OmniMart Canterbury,South East,Supermarket,alcohol,Saturday,Early evening (17-20),1,1.0
+001,OmniMart Camden,London,Local,lottery,Thursday,Afternoon (12-17),1,1.0
+010,OmniMart Oxford,South East,Local,lottery,Friday,Early evening (17-20),1,1.0
+014,OmniMart Exeter,South West,Supermarket,energy drinks,Saturday,Afternoon (12-17),1,1.0
+023,OmniMart Chester,North West,Supermarket,tobacco,Thursday,Morning (08-12),1,1.0
+001,OmniMart Camden,London,Local,lottery,Friday,Early evening (17-20),1,1.0
+002,OmniMart Clapham,London,Local,alcohol,Saturday,Late evening (20-22),1,1.0
+028,OmniMart Glasgow,Scotland,Supermarket,analgesics,Tuesday,Early evening (17-20),1,0.0
+008,OmniMart Reading,South East,Superstore,lottery,Wednesday,Morning (08-12),1,1.0
+012,OmniMart Bristol,South West,Superstore,energy drinks,Friday,Afternoon (12-17),1,1.0
+008,OmniMart Reading,South East,Superstore,analgesics,Monday,Afternoon (12-17),1,0.0
+019,OmniMart Coventry,Midlands,Local,energy drinks,Friday,Early evening (17-20),1,1.0
 014,OmniMart Exeter,South West,Supermarket,tobacco,Friday,Afternoon (12-17),2,1.0
 006,OmniMart Ealing,London,Supermarket,tobacco,Friday,Early evening (17-20),2,1.0
 029,OmniMart Aberdeen,Scotland,Local,fireworks,Saturday,Afternoon (12-17),1,1.0
