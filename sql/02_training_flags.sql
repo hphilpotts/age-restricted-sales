@@ -4,9 +4,10 @@
 
 
 -- Signal 1: check-rate outlier (very low OR very high id_check_complete rate)
--- Uses estate-wide 5th/85th percentiles and hardcoded cutoffs in config
+-- Uses estate-wide 5th/85th percentiles, with hardcoded cutoffs in config CTE
 -- users with < 10 transactions are not scored
 
+-- build average check rate view:
 CREATE OR REPLACE VIEW user_check_rate_stats AS
 SELECT
     store_number,
@@ -16,17 +17,21 @@ SELECT
 FROM transactions
 GROUP BY store_number, user_id;
 
-
+-- assign overall check rate training flags:
 CREATE OR REPLACE VIEW user_check_rate_flags AS
 -- hardcoded values set below:
 WITH config AS (
     SELECT 
+        -- absolute high/low cutoffs (override extreme estate quantiles values)
         0.05 AS low_floor,
         0.50 AS high_ceiling,
-        10 AS min_tx -- sample size protection
+        -- sample size protection (smaller than this is too noisy)
+        10 AS min_tx
 ),
+-- set cutoffs for high/low flags
 bounds AS (
     SELECT
+        -- PostgreSQL & Snowflake use PERCENTILE_CONT(0.05) WITHIN GROUP (ORDER BY s.check_complete_rate)
         GREATEST(quantile_cont(s.check_complete_rate, 0.05), c.low_floor) AS low_cutoff,
         LEAST(quantile_cont(s.check_complete_rate, 0.85), c.high_ceiling) AS high_cutoff
     FROM user_check_rate_stats s
@@ -34,6 +39,7 @@ bounds AS (
     WHERE s.total_transactions >= c.min_tx
     GROUP BY c.low_floor, c.high_ceiling
 )
+-- build flags view for Signal 1
 SELECT
     s.store_number,
     s.user_id,
@@ -59,18 +65,28 @@ CROSS JOIN config c;
 CREATE OR REPLACE VIEW user_pass_rate_flags AS
 -- hardcoded values set below:
 WITH config AS (
-    SELECT 0.8 AS low_pass_rate, 0.95 AS high_pass_rate, 5 AS min_tx, 30 AS min_tx_high_pass
+    SELECT 
+        0.8 AS low_pass_rate, 
+        0.95 AS high_pass_rate, 
+        5 AS min_tx, 
+        30 AS min_tx_high_pass -- higher threshold set for high pass rates
+            -- lower than this flags too frequently, where user has low number of checks
 ),
+-- get pass rate from TXNs with checks completed
 raw_stats AS (
     SELECT
         t.store_number,
         t.user_id,
         COUNT(*) FILTER (WHERE t.id_check_complete) AS checks_completed,
-        AVG(t.id_check_passed::INTEGER) FILTER (WHERE t.id_check_complete) AS check_pass_rate
+        AVG(CAST(t.id_check_passed AS INTEGER)) FILTER (WHERE t.id_check_complete) AS check_pass_rate
+        -- if running in Snowflake, FILTER is not supported, so the above would need:
+            -- COUNT(CASE WHEN t.id_check_complete THEN 1 END) AS checks_completed,
+            -- AVG(CASE WHEN t.id_check_complete THEN CAST(t.id_check_passed AS INTEGER) END) AS check_pass_rate
     FROM transactions t
     GROUP BY t.store_number, t.user_id
     HAVING COUNT(*) FILTER (WHERE t.id_check_complete) > 0
 )
+-- build flags view for Signal 2
 SELECT
     s.*,
     c.low_pass_rate,
@@ -78,6 +94,7 @@ SELECT
     CASE
         WHEN s.checks_completed <= c.min_tx THEN 'Unscored - low volume'
         WHEN s.check_pass_rate < c.low_pass_rate THEN 'Low pass rate - possible mislogging'
+        -- ? possible addition - a second 'Unscored - insufficient volume for High pass rate check'
         WHEN s.check_pass_rate >= c.high_pass_rate AND s.checks_completed >= c.min_tx_high_pass THEN 'High pass rate'
         ELSE 'Normal'
     END AS pass_rate_flag
@@ -91,15 +108,19 @@ CROSS JOIN config c;
 
 CREATE OR REPLACE VIEW recent_test_purchase_fails AS
 WITH reference_date AS (
+    -- in prod I'd probably just use CURRENT_DATE() in the SELECT
+    -- more performant but assumes data is fresh
     SELECT MAX(transaction_date) AS today FROM transactions
 )
+-- build flags view for Signal 3
 SELECT
     tp.store_number,
     tp.user_id,
     tp.test_purchase_id,
     tp.test_purchase_date,
     tp.category,
-    date_diff('day', tp.test_purchase_date::DATE, r.today::DATE) AS days_since_fail
+    date_diff('day', CAST(tp.test_purchase_date AS DATE), CAST(r.today AS DATE)) AS days_since_fail
+        -- Snowflake: DATEDIFF(day, [...])
 FROM test_purchases tp
 CROSS JOIN reference_date r
 WHERE tp.test_purchase_pass = FALSE
@@ -107,25 +128,30 @@ WHERE tp.test_purchase_pass = FALSE
 
 
 -- Signal 4: category-level check-rate 
+-- compares each category against the user's own baseline check rate
+-- intended to target category-specific misunderstanding/issues
 
+-- build category-level check rate view
 CREATE OR REPLACE VIEW user_category_check_rate_stats AS
 SELECT
     t.store_number,
     t.user_id,
     t.category,
     COUNT(*) AS category_transactions,
-    AVG(t.id_check_complete::INTEGER) AS category_check_rate,
+    AVG(CAST(t.id_check_complete AS INTEGER)) AS category_check_rate,
     s.check_complete_rate AS baseline_check_rate
 FROM transactions t
 JOIN user_check_rate_stats s USING (store_number, user_id)
 GROUP BY t.store_number, t.user_id, t.category, s.check_complete_rate;
 
-
+-- assign category check rate training flags:
 CREATE OR REPLACE VIEW user_category_check_rate_flags AS
 -- hardcoded values set below:
 WITH config AS (
     SELECT 5 AS min_tx, 0.15 AS gap_threshold -- 15 percentage points vs own baseline
+    -- ! potential blind spot where user with a baseline below 15% check rate will never trigger here
 )
+-- build category-level check rate view
 SELECT
     s.store_number,
     s.user_id,
