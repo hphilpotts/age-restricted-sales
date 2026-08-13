@@ -1,6 +1,2 @@
-# Used by scripts/generate_data.py
-numpy
-pandas
-
 # Provides the `duckdb` CLI command used by scripts/run_pipeline.sh
 duckdb-cli
