@@ -35,10 +35,11 @@ The project currently covers 30 shops, 533 users, 900 test purchases, c. 158k tr
 ├── sql/
 │   ├── 01_create_tables.sql              # load + type the raw CSVs
 │   ├── 02_training_flags.sql             # capture the four training-flag signals
-│   ├── 03_shop_performance_summary.sql   # assemble shop/category/day/time-of-day rollups
-│   └── 04_export_for_tableau.sql         # exports modeled views as CSVs to data/modeled/
+│   ├── 03_shop_performance_summary.sql   # shop performance aggregate
+│   ├── 04_test_purchases_processed.sql   # add time-of-day grouping to test purchases
+│   └── 05_export_for_tableau.sql         # exports modeled views as CSVs to data/modeled/
 ├── scripts/
-│   └── run_pipeline.sh                   # runs all 4 SQL scripts in order
+│   └── run_pipeline.sh                   # runs all 5 SQL scripts in order
 └── README.md
 ```
 

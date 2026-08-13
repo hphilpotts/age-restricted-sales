@@ -21,10 +21,13 @@ duckdb "$DB" -c ".read sql/01_create_tables.sql"
 echo "Building training-flag views..."
 duckdb "$DB" -c ".read sql/02_training_flags.sql"
 
-echo "Building shop performance views..."
+echo "Building shop performance view..."
 duckdb "$DB" -c ".read sql/03_shop_performance_summary.sql"
 
+echo "Processing test purchase datetimes..."
+duckdb "$DB" -c ".read sql/04_test_purchases_processed.sql"
+
 echo "Exporting modeled CSVs for Tableau..."
-duckdb "$DB" -c ".read sql/04_export_for_tableau.sql"
+duckdb "$DB" -c ".read sql/05_export_for_tableau.sql"
 
 echo "Done. Modeled CSVs are in data/modeled/ - ready for export/ingestion to Tableau."
