@@ -18,5 +18,3 @@ venv/
 .ipynb_checkpoints/
 
 # csv files generated locally
-data/raw/
-data/modeled/

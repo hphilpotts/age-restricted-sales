@@ -1,0 +1,31 @@
+store_number,shop_name,region,format
+001,OmniMart Camden,London,Local
+002,OmniMart Clapham,London,Local
+003,OmniMart Islington,London,Supermarket
+004,OmniMart Greenwich,London,Supermarket
+005,OmniMart Richmond,London,Local
+006,OmniMart Ealing,London,Supermarket
+007,OmniMart Guildford,South East,Supermarket
+008,OmniMart Reading,South East,Superstore
+009,OmniMart Brighton,South East,Supermarket
+010,OmniMart Oxford,South East,Local
+011,OmniMart Canterbury,South East,Supermarket
+012,OmniMart Bristol,South West,Superstore
+013,OmniMart Bath,South West,Local
+014,OmniMart Exeter,South West,Supermarket
+015,OmniMart Plymouth,South West,Supermarket
+016,OmniMart Birmingham,Midlands,Superstore
+017,OmniMart Nottingham,Midlands,Supermarket
+018,OmniMart Leicester,Midlands,Supermarket
+019,OmniMart Coventry,Midlands,Local
+020,OmniMart Manchester,North West,Superstore
+021,OmniMart Liverpool,North West,Supermarket
+022,OmniMart Preston,North West,Local
+023,OmniMart Chester,North West,Supermarket
+024,OmniMart Newcastle,North East,Supermarket
+025,OmniMart Durham,North East,Local
+026,OmniMart York,North East,Supermarket
+027,OmniMart Edinburgh,Scotland,Superstore
+028,OmniMart Glasgow,Scotland,Supermarket
+029,OmniMart Aberdeen,Scotland,Local
+030,OmniMart Cardiff,Wales,Supermarket
