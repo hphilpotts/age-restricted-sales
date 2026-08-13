@@ -6,9 +6,9 @@ The business problem this is designed to solve is the largely _reactive_ nature 
 
 By introducing a _predictive_ approach based on user patterns in transaction data, management teams can be provided with actionable insights that allow them to check-in with cashiers that may need additional support, providing training and follow-up that prevents legal breaches/test purchase fails before they occur.  
 
-**All data in this repository is synthetic.** It is generated from scratch (via a Claude-created python script) to plausible, realistic distributions - no real employer data, real shop names, or real staff data is used anywhere in this project.
+**All data in this repository is synthetic**, generated from scratch to plausible, realistic distributions - no real employer data, real shop names, or real staff data is used anywhere in this project.   
 
-The project currently covers 32 shops, 533 users, 900 test purchases, and c. 39.5k transactions involving age-restricted items, however it can be scaled up to handle larger datasets. 
+The project currently covers 30 shops, 533 users, 900 test purchases, c. 158k transactions involving age-restricted items (of which 29k involve ID checks).  
 
 ## What this shows
 
@@ -16,7 +16,7 @@ The project currently covers 32 shops, 533 users, 900 test purchases, and c. 39.
   
 - **Training needs flags** (staff level) - four signals are combined:
   1. **Check-rate Outlier** - a cashier shows unusually low or high ID-check completion rate (based on self-adjusting estate-wide percentile bands, not a fixed cutoff). Excessively high/low values often indicate training needs, mislogging on till POS, or cashier confidence issues.  
-  2. **Pass-rate Outlier** - a cashier's ID-check pass rate below 80% (of checks completed): a likely sign of mislogging rather than a single cashier encountering a large number of _genuine_ refusals (unlikely).  
+  2. **Pass-rate Outlier** - a cashier's ID-check pass rate below 80% or above 95% of checks completed: a likely sign of mislogging rather than a single cashier encountering a large number of genuine refusals (unlikely) or a very low number of customers who are underage or without acceptable ID (again, unlikely).  
   3. **Recent Test Purchase Fail**: a cashier has a failed test purchase within the last 90 days, indicating a clear and persistent need for follow-up training and manager check-ins.  
   4. **Category-level check-rate Outlier** - as with Signal 1 (overall checks), however _category-specific_ training issues are targeted, with check rates compared with the cashier's own baseline. This helps identify category-related training issues, e.g. a misunderstanding of the rules relating to Energy Drinks or Lottery tickets, which might otherwise be obscured through a 'normal' check rate across other categories.  
 
@@ -30,7 +30,7 @@ The project currently covers 32 shops, 533 users, 900 test purchases, and c. 39.
 ```
 .
 ├── data/
-│   ├── raw/                              # generated source CSVs
+│   ├── raw/                              # source CSVs
 │   └── modeled/                          # SQL-generated output, ready for Tableau
 ├── sql/
 │   ├── 01_create_tables.sql              # load + type the raw CSVs
@@ -42,11 +42,12 @@ The project currently covers 32 shops, 533 users, 900 test purchases, and c. 39.
 └── README.md
 ```
 
-## Running pipeline from scratch
+## Running pipeline
 
 ```bash
-# 1. Install dependencies
-pip install -r requirements.txt
+# 1. Install DuckDB
+brew install duckdb
+  # (Not on Homebrew? See duckdb.org/docs/installation for other platforms.)
 
 # 2. Run the full DuckDB pipeline (load -> model -> export)
 bash scripts/run_pipeline.sh
@@ -55,7 +56,7 @@ bash scripts/run_pipeline.sh
 # ...and build a dashboard, if you like
 ```
 
-Re-run step 1 any time the source assumptions change, replacing the .CSVs in Tableau Public (_note_ - in a 'live' environment, a direct connection would likely just require a Tableau extract refresh).  
+Re-run step 2 any time the source assumptions change, replacing the .CSVs in Tableau Public (_note_ - in a 'live' environment, a direct connection would likely just require a Tableau extract refresh).  
 
 ## Design notes / known simplifications
 
