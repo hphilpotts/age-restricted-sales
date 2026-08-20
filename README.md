@@ -6,6 +6,8 @@ The business problem this is designed to solve is the largely _reactive_ nature 
 
 By introducing a _predictive_ approach based on user patterns in transaction data, management teams can be provided with actionable insights that allow them to check-in with cashiers that may need additional support, providing training and follow-up that prevents legal breaches/test purchase fails before they occur.  
 
+**[View the Tableau Public dashboard](https://public.tableau.com/views/AgeRestrictedSales/ShopOverview?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
 **All data in this repository is synthetic**, generated from scratch to plausible, realistic distributions - no real employer data, real shop names, or real staff data is used anywhere in this project.   
 
 The project currently covers 30 shops, 533 users, 900 test purchases, c. 158k transactions involving age-restricted items (of which 29k involve ID checks).  
